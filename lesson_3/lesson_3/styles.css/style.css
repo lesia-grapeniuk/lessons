@@ -1,0 +1,38 @@
+@import url('reset.css');
+
+.conteiner {
+  background-color: #7654;
+}
+
+.color-green {
+  color: rgb(15, 131, 15);
+}
+
+.conteiner {
+  color: rgb(50, 161, 205);
+}
+
+.conteiner__heritage-text {
+  color: #ecdd38;
+  background-color: #537cce;
+}
+
+.color-yellow {
+  color: rgb(184, 170, 16);
+}
+
+.color-blue {
+  color: #3961b1;
+}
+
+.conteiner__title-2 {
+  color: rgb(0, 0, 118);
+}
+
+.conteiner__heritage-link {
+  color: #1ee6a0;
+}
+
+#hucul {
+  color: red;
+}
