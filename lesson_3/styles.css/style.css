@@ -4,11 +4,11 @@
   background-color: #7654;
 }
 
-.color-green {
+.conteiner__title.color-green {
   color: rgb(15, 131, 15);
 }
 
-.conteiner {
+.conteiner > p {
   color: rgb(50, 161, 205);
 }
 
@@ -25,8 +25,16 @@
   color: #3961b1;
 }
 
+.conteiner__heritage-item.color-grey {
+  color: grey;
+}
+
 .conteiner__title-2 {
   color: rgb(0, 0, 118);
+}
+
+li.carpathian{
+  color: #3961b1;
 }
 
 .conteiner__heritage-link {
@@ -36,3 +44,8 @@
 #hucul {
   color: red;
 }
+
+.conteiner__heritage-list-item.color-orange  {
+  color: orangered;
+}
+
