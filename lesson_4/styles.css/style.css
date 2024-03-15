@@ -7,7 +7,7 @@
 .nav__containe-list {
   font-family: inherit;
   font-size: 19px;
-  letter-spacing: 1;
+  letter-spacing: ;
   font-weight: 600;
   line-height: 20px;
   text-transform: capitalize;
@@ -36,7 +36,7 @@
 .main__article-title.bed {
   letter-spacing: 0;
   text-align: center;
-  font-style: 40px;
+  font-size: 40px;
   color: inherit;
   font-style: italic;
   font-family: inherit;
@@ -52,7 +52,7 @@
 .footer__container-title {
   text-align: center;
   color: inherit;
-  font-style: 40px;
+  font-size: 40px;
   font-style: italic;
   font-family: inherit;
   font-weight: bold;
@@ -112,7 +112,7 @@
   letter-spacing: 1px;
   font-style: italic;
   font-family: inherit;
-  font-weight: medium;
+  font-weight: 600;
   font-size: 20px;
   text-align: center;
   text-shadow: -3px -2px 4px #083a2f;
