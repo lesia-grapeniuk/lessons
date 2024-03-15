@@ -7,7 +7,7 @@
 .nav__containe-list {
   font-family: inherit;
   font-size: 19px;
-  letter-spacing: ;
+  word-spacing: normal;
   font-weight: 600;
   line-height: 20px;
   text-transform: capitalize;
