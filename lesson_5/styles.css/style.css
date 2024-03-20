@@ -64,8 +64,7 @@
 }
 
 .follow-instagram__title {
-  text-align: center;
-  padding-top: 100px;
+  width: 100%;
 }
 
 .follow-instagram__title-text {
@@ -78,6 +77,8 @@
   margin-bottom: 0;
   letter-spacing: 0;
   padding-bottom: 60px;
+  padding-top: 100px;
+  vertical-align: auto;
 }
 
 .follow-instagram__links {
