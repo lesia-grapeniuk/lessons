@@ -5,26 +5,26 @@
 @import url("reset.css");
 /* #region nav */
 .nav {
-  margin: 0 auto;
   width: 100%;
-  height: 35px;
+  height: 65px;
 }
 
 .logo {
   background-color: #13efbf;
-  width: 80px;
-  height: 30px;
+  width: 100px;
+  height: 50px;
   padding: 5px;
 }
 
 .nav__container {
   display: inline-block;
-  width: 800px;
-  
+  width: 1300px;
 }
 
 .nav__container-list {
-  height: 30px;
+  text-align: center;
+  height: 50px;
+  padding-top: 10px;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -33,12 +33,22 @@
 }
 
 .nav__container-item {
+  height: 25px;
   margin: 5px 15px;
   padding: 5px 10px;
   box-sizing: border-box;
   display: inline-block;
   background-color: #fff;
   color: darkgreen;
+  border-radius: 10px;
+}
+
+.nav__container-link {
+  text-align: center;
+  vertical-align: auto;
+  padding-top: 5px;
+  width: 300px;
+  letter-spacing: 2px;
 }
 /* #endregion nav */
 /* #region insta */
