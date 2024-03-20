@@ -212,6 +212,7 @@
   box-sizing: border-box;
   width: 300px;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .quality__title-blocks {
@@ -260,3 +261,29 @@
   text-decoration: underline;
 }
 /* #endregion footer */
+
+.overflow1 {
+  width: 300px;
+  padding: 30px;
+  height: 10px;
+  background-color: #0c3f6b;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+.overflow2 {
+  padding: 30px;
+  height: 10px;
+  background-color: #0c3f6b;
+  overflow: visible;
+  margin-bottom: 30px;
+}
+
+.overflow3 {
+  width: 500px;
+  padding: 30px;
+  height: 10px;
+  background-color: #0c3f6b;
+  overflow: scroll;
+  margin-bottom: 10px;
+}
