@@ -59,6 +59,7 @@
 }
 
 .follow-instagram__block {
+  box-sizing: border-box;
   margin: 0 auto;
   min-width: 1320px;
 }
@@ -77,16 +78,13 @@
   margin-bottom: 0;
   letter-spacing: 0;
   padding-bottom: 60px;
-  padding-top: 100px;
   vertical-align: auto;
 }
 
 .follow-instagram__links {
   display: inline-block;
   box-sizing: border-box;
-  margin: 0 auto;
-
-
+  padding-inline: 100px;
 }
 
 .follow-instagram__links-link {
