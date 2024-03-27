@@ -9,7 +9,6 @@
 .header {
   width: 100%;
   background-color: rgb(234, 234, 146);
-  opacity: 0.8;
 }
 
 .logo {
@@ -22,6 +21,7 @@
 .nav__container {
   display: inline-block;
   width: 1300px;
+  text-align: right;
 }
 
 .nav__container-list {
@@ -107,7 +107,6 @@
   margin: 0 auto;
   padding: 20px;
   background-color: #f3dac0;
-  opacity: 0.8;
 }
 
 .main__section-title,
@@ -227,7 +226,6 @@
   padding-bottom: 20px;
   margin: 5px;
   min-height: 525px;
-  opacity: 0.8;
 }
 
 .block-1 {
@@ -343,7 +341,6 @@
   box-shadow: inset 0 0 70px 30px #343429cc, 0 0 50px 25px #edf518cc;
   letter-spacing: 5px;
   text-shadow: 0 10px 5px #000;
-  opacity: 0.7;
 }
 
 .bestcourse__title:hover {
