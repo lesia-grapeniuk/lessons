@@ -261,8 +261,8 @@
   padding-top: 25px;
 }
 
-.block-2__list-6 :has(li) {
-  color: #dcaeae;
+ul li:has(>span) {
+  color: #b75959;
 }
 
 /* #endregion block-2 */
@@ -309,9 +309,8 @@
 
 .block-3__block-title-2 {
   font-family: inherit;
-  font-weight: 400px;
+  font-weight: 400;
   color: #fff;
-  font-style: 29px;
   letter-spacing: 3px;
   text-align: center;
   vertical-align: middle;
@@ -326,7 +325,7 @@
   font-family: inherit;
   font-weight: 400;
   color: #fff;
-  font-style: 29px;
+  font-size: 29px;
   letter-spacing: 3px;
   text-align: center;
   vertical-align: middle;
@@ -363,7 +362,7 @@
 
 .block-3__block-title-5 {
   font-family: inherit;
-  font-weight: 400px;
+  font-weight: 400;
   color: #fff;
   letter-spacing: 3px;
   text-align: center;
