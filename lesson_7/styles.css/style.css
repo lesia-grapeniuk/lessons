@@ -391,7 +391,6 @@ ul li:has(>span) {
 
 .block-4 {
   text-align: center;
-  display: none;
 }
 
 .game {
@@ -401,7 +400,6 @@ ul li:has(>span) {
   height: 600px;
   background-image: url("../images/game/road.jpg");
   background-repeat: no-repeat;
-  /* cursor: url("../images/game/car.png"), auto; */
   text-align: left;
 }
 
@@ -432,6 +430,11 @@ ul li:has(>span) {
   display: inline-block;
   vertical-align: bottom;
   margin-left: -10px;
+  visibility: hidden;
+}
+
+.game__start:hover + .game__block-1 {
+  visibility: visible;
 }
 
 .game__block-2 {
@@ -441,11 +444,12 @@ ul li:has(>span) {
   margin-left: -5px;
   vertical-align: bottom;
   border-radius: 73% 13% 100% 0% / 0% 100% 0% 100%;
+  visibility: hidden;
 }
 
 .game__block-1:hover + .game__block-2,
-.game__block-2:hover {
-  width: 1px;
+.game__block-1:hover {
+  visibility: visible;
 }
 
 .game__block-3 {
@@ -456,6 +460,12 @@ ul li:has(>span) {
   margin-left: -24px;
   vertical-align: bottom;
   border-radius: 100% 0% 43% 57% / 0% 100% 0% 100%;
+  visibility: hidden;
+}
+
+.game__block-2:hover + .game__block-3,
+.game__block-2:hover {
+  visibility: visible;
 }
 
 .game__block-4 {
@@ -466,6 +476,12 @@ ul li:has(>span) {
   vertical-align: bottom;
   margin-bottom: -65px;
   border-radius: 61% 39% 100% 0% / 0% 100% 0% 100%;
+  visibility: hidden;
+}
+
+.game__block-3:hover + .game__block-4,
+.game__block-3:hover {
+  visibility: visible;
 }
 
 .game__block-5 {
@@ -475,6 +491,12 @@ ul li:has(>span) {
   vertical-align: bottom;
   margin-bottom: -152px;
   margin-left: -24px;
+  visibility: hidden;
+}
+
+.game__block-4:hover + .game__block-5,
+.game__block-4:hover {
+  visibility: visible;
 }
 
 .game__block-6 {
@@ -485,6 +507,12 @@ ul li:has(>span) {
   margin-bottom: -170px;
   margin-left: -24px;
   border-radius: 100% 0% 45% 55% / 0% 0% 100% 100%;
+  visibility: hidden;
+}
+
+.game__block-5:hover + .game__block-6,
+.game__block-5:hover {
+  visibility: visible;
 }
 
 .game__block-7 {
@@ -495,6 +523,12 @@ ul li:has(>span) {
   margin-bottom: -150px;
   margin-left: -24px;
   border-radius: 100% 0% 100% 0% / 79% 100% 0% 21%;
+  visibility: hidden;
+}
+
+.game__block-6:hover + .game__block-7,
+.game__block-6:hover {
+  visibility: visible;
 }
 
 .game__block-8 {
@@ -504,6 +538,12 @@ ul li:has(>span) {
   vertical-align: bottom;
   margin-bottom: -125px;
   margin-left: -5px;
+  visibility: hidden;
+}
+
+.game__block-7:hover + .game__block-8,
+.game__block-7:hover {
+  visibility: visible;
 }
 
 .game__block-9 {
@@ -514,6 +554,12 @@ ul li:has(>span) {
   margin-bottom: -125px;
   margin-left: -5px;
   border-radius: 100% 0% 100% 0% / 34% 71% 29% 66%;
+  visibility: hidden;
+}
+
+.game__block-8:hover + .game__block-9,
+.game__block-8:hover {
+  visibility: visible;
 }
 
 .game__block-10 {
@@ -522,6 +568,12 @@ ul li:has(>span) {
   display: inline-block;
   margin-bottom: -37px;
   margin-left: -5px;
+  visibility: hidden;
+}
+
+.game__block-9:hover + .game__block-10,
+.game__block-9:hover {
+  visibility: visible;
 }
 
 .game__block-11 {
@@ -531,6 +583,12 @@ ul li:has(>span) {
   margin-bottom: -37px;
   margin-left: -5px;
   border-radius: 100% 0% 100% 0% / 46% 82% 18% 54%;
+  visibility: hidden;
+}
+
+.game__block-10:hover + .game__block-11,
+.game__block-10:hover {
+  visibility: visible;
 }
 
 .game__block-12 {
@@ -540,6 +598,12 @@ ul li:has(>span) {
   margin-bottom: 13px;
   margin-left: -5px;
   border-radius: 86% 14% 100% 0% / 0% 100% 0% 100%;
+  visibility: hidden;
+}
+
+.game__block-11:hover + .game__block-12,
+.game__block-11:hover {
+  visibility: visible;
 }
 
 .game__block-13 {
@@ -549,6 +613,12 @@ ul li:has(>span) {
   margin-bottom: -134px;
   margin-left: -25px;
   border-radius: 100% 0% 58% 42% / 0% 100% 0% 100%;
+  visibility: hidden;
+}
+
+.game__block-12:hover + .game__block-13,
+.game__block-12:hover {
+  visibility: visible;
 }
 
 .game__block-14 {
@@ -557,6 +627,12 @@ ul li:has(>span) {
   display: inline-block;
   margin-bottom: -134px;
   margin-left: -5px;
+  visibility: hidden;
+}
+
+.game__block-13:hover + .game__block-14,
+.game__block-13:hover {
+  visibility: visible;
 }
 
 .game__block-15 {
@@ -566,24 +642,47 @@ ul li:has(>span) {
   margin-bottom: -194px;
   margin-left: -5px;
   border-radius: 67% 33% 47% 53% / 0% 100% 0% 100%;
+  visibility: hidden;
+}
+
+.game__block-14:hover + .game__block-15,
+.game__block-14:hover {
+  visibility: visible;
 }
 
 .game__block-16 {
   height: 20px;
-  width: 105px;
+  width: 155px;
   display: inline-block;
   margin-bottom: -194px;
   margin-left: -5px;
+  visibility: hidden;
+}
+
+.game__block-15:hover + .game__block-16,
+.game__block-15:hover {
+  visibility: visible;
 }
 
 .game__block-17 {
-  height: 80px;
-  width: 35px;
+  width: 75px;
+  height: 75px;
   display: inline-block;
   margin-bottom: -222px;
   margin-left: -5px;
-  background-color: red;
+  background-image: url('../images/game/win.jpg');
+  visibility: hidden;
 }
+
+.game__block-16:hover + .game__block-17,
+.game__block-16:hover {
+  visibility: visible;
+}
+
+.game__block-17:hover {
+  visibility: visible;
+}
+
 /* #endregion block-4 */
 /* #region block-5 */
 
@@ -847,4 +946,72 @@ ul li:has(>span) {
   text-align: justify;
   margin-top: 40px;
 }
-/* #endregion block-5 */
+/* #endregion block-6 */
+
+/* #region block-7 */
+.block-7 {
+  font-size: 0;
+    
+}
+
+.hgf {
+  max-width: 1070px;
+    margin: 0 auto;
+    background-color: rgb(27, 27, 10);
+    height: 600px;
+}
+.block-7__game1 {
+  
+}
+
+.block-7__block-1 {
+  visibility: visible;
+    background-color: rgb(40, 112, 112);
+    width: 60px;
+    height: 100px;
+}
+
+.block-7__block-1:hover+.block-7__block-2 {
+  visibility: visible;
+}
+
+.block-7__block-2 {width: 700px;
+  height: 40px;
+  background-color: rgb(40, 112, 112);
+  visibility: hidden;
+}
+
+.block-7__block-2:hover + .block-7__block-3 {
+  visibility: visible;
+}
+
+.block-7__block-3 {
+  width: 50px;
+  height: 100px;
+  background-color: rgb(40, 112, 112);
+  visibility: hidden;
+  margin-left: 650px;
+}
+.block-7__block-4 {
+  width: 300px;
+  height: 30px;
+  background-color: rgb(40, 112, 112);
+  visibility: hidden;
+  margin-left: 400px;
+}
+
+.block-7__block-5 {
+  width: 25px;
+    height: 200px;
+    background-color: rgb(40, 112, 112);
+    visibility: hidden;
+    margin-left: 400px;
+}
+.block-7__block-6 {
+  width: 80px;
+    height: 50px;
+    background-color: rgb(193, 16, 16);
+    visibility: hidden;
+    margin-left: 370px;
+}
+/* #endregion block-7 */
