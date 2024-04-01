@@ -183,7 +183,7 @@
 
 .block-2__list {
   font-family: inherit;
-  font-weight: 400px;
+  font-weight: 400;
   color: #fff;
   letter-spacing: 1px;
   padding-top: 25px;
@@ -195,7 +195,7 @@
 
 .block-2__list-1 {
   font-family: inherit;
-  font-weight: 400px;
+  font-weight: 400;
   color: #fff;
   letter-spacing: 1px;
   padding-top: 25px;
@@ -207,7 +207,7 @@
 
 .block-2__list-2 {
   font-family: inherit;
-  font-weight: 400px;
+  font-weight: 400;
   color: #fff;
   letter-spacing: 1px;
   padding-top: 25px;
@@ -219,7 +219,7 @@
 
 .block-2__list-3 {
   font-family: inherit;
-  font-weight: 400px;
+  font-weight: 400;
   color: #fff;
   letter-spacing: 1px;
   padding-top: 25px;
@@ -231,7 +231,7 @@
 
 .block-2__list-4 {
   font-family: inherit;
-  font-weight: 400px;
+  font-weight: 400;
   color: #fff;
   letter-spacing: 1px;
   padding-top: 25px;
@@ -243,7 +243,7 @@
 
 .block-2__list-5 {
   font-family: inherit;
-  font-weight: 400px;
+  font-weight: 400;
   color: #fff;
   letter-spacing: 1px;
   padding-top: 25px;
@@ -255,13 +255,13 @@
 
 .block-2__list-6 {
   font-family: inherit;
-  font-weight: 400px;
+  font-weight: 400;
   color: #fff;
   letter-spacing: 1px;
   padding-top: 25px;
 }
 
-.block-2__list-6:has(li) {
+.block-2__list-6 :has(li) {
   color: #dcaeae;
 }
 
@@ -295,9 +295,8 @@
 
 .block-3__block-title-1 {
   font-family: inherit;
-  font-weight: 400px;
+  font-weight: 400;
   color: #fff;
-  font-style: 29px;
   letter-spacing: 3px;
   text-align: center;
   vertical-align: middle;
@@ -325,7 +324,7 @@
 
 .block-3__block-title-3 {
   font-family: inherit;
-  font-weight: 400px;
+  font-weight: 400;
   color: #fff;
   font-style: 29px;
   letter-spacing: 3px;
@@ -340,9 +339,8 @@
 
 .block-3__block-title-4 {
   font-family: inherit;
-  font-weight: 400px;
+  font-weight: 400;
   color: #fff;
-  font-style: 29px;
   letter-spacing: 3px;
   text-align: center;
   vertical-align: middle;
@@ -367,7 +365,6 @@
   font-family: inherit;
   font-weight: 400px;
   color: #fff;
-  font-style: 29px;
   letter-spacing: 3px;
   text-align: center;
   vertical-align: middle;
@@ -757,26 +754,30 @@
 }
 /* #endregion block-5 */
 /* #region block-6 */
+.block-6 {
+  background-color: #fff;
+}
 .main__section {
   max-width: 1070px;
   box-sizing: border-box;
   margin: 0 auto;
   margin-bottom: 30px;
+  background-color: #fff;
+  margin-top: 20px;
 }
 
 .main__section-title,
 .furniture,
 .footer__container-title {
-  margin-top: 0;
   width: 100%;
-  text-align: left;
+  text-align: center;
   color: #2b2929;
-  font-size: 40px;
+  font-size: 35px;
   font-style: normal;
   font-family: inherit;
   font-weight: 400;
   letter-spacing: 0;
-  line-height: 48px;
+  line-height: 38px;
   text-transform: uppercase;
 }
 
