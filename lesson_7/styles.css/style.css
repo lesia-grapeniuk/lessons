@@ -856,10 +856,7 @@ ul li:has(> span) {
   margin: 0 auto;
   margin-bottom: 30px;
   background-color: #fff;
-}
-
-.main__section-title {
-  padding-top: 20px;
+  padding: 20px 0;
 }
 
 .main__section-title,
