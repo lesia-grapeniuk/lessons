@@ -213,6 +213,7 @@
   background-color: #fff;
   width: 1290px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .popular-categories__title {
@@ -256,6 +257,7 @@
 }
 
 .card__link {
+  max-width: 250px;
   position: relative;
   overflow: hidden;
   z-index: 4;
