@@ -63,7 +63,7 @@
   padding-left: 54px;
   vertical-align: middle;
   content: "";
-  background-image: url("/images/menu-catalog.svg");
+  background-image: url("../images/menu-catalog.svg");
   background-repeat: no-repeat;
   left: 0;
   top: 0;
@@ -74,7 +74,7 @@
 .menu-button__text:active::before {
   vertical-align: middle;
   content: "";
-  background-image: url("/images/close_catalog.svg");
+  background-image: url("../images/close_catalog.svg");
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
