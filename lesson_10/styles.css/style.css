@@ -71,17 +71,6 @@
   height: 24px;
 }
 
-.menu-button__text:hover {
-  vertical-align: middle;
-  content: "";
-  background-image: url("/images/menu-catalog.svg");
-  background-repeat: no-repeat;
-  left: 0;
-  top: 0;
-  width: 24px;
-  height: 24px;
-}
-
 .menu-button__text:active::before {
   vertical-align: middle;
   content: "";
@@ -144,7 +133,7 @@
 
 .aside-menu__link::after {
   content: "";
-  background-image: url("/images/arrow.svg");
+  background-image: url('../images/arrow.svg');
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
