@@ -422,6 +422,7 @@
 }
 
 .wheel {
+  z-index: 2;
   bottom: 18%;
   position: absolute;
   width: 120px;
@@ -451,7 +452,7 @@
 .car__wheel-3 {
   left: 26.5%;
   width: 100px;
-  height: 100px
+  height: 100px;
 }
 
 .car:hover .wheel {
@@ -492,6 +493,30 @@
   height: 75px;
   background-color: #1d4f8d;
   border-radius: 0% 100% 100% 0% / 0% 100% 0% 100%;
+}
+.car__wing-block-1 {
+  position: absolute;
+  width: 145px;
+  height: 92px;
+  border-radius: 49% 50% 5% 7% / 69% 71% 4% 31%;
+  border: 5px solid rgb(17, 63, 128);
+  border-bottom: 0;
+  background-color: #000;
+  bottom: 24%;
+  left: 44.5%;
+  z-index: 1;
+}
+.car__wing-block-2 {
+  position: absolute;
+  width: 145px;
+  height: 92px;
+  border-radius: 49% 50% 5% 7% / 69% 71% 4% 31%;
+  border: 5px solid rgb(17, 63, 128);
+  border-bottom: 0;
+  background-color: #000;
+  bottom: 24%;
+  right: 14%;
+  z-index: 1;
 }
 .car__wing-1 {
   position: absolute;
@@ -554,7 +579,7 @@
   bottom: 45.5%;
   height: 10px;
   background-color: #000;
-  border-radius: 49% 51% 0% 100% / 100% 100% 0% 0% 
+  border-radius: 49% 51% 0% 100% / 100% 100% 0% 0%;
 }
 .car__top-line-1 {
   position: absolute;
@@ -577,7 +602,7 @@
   clip-path: polygon(8% 39%, 79% 39%, 100% 100%, 0% 100%);
 }
 .car__top-line-2 {
-position: absolute;
+  position: absolute;
   right: 16.6%;
   width: 255px;
   bottom: 38.6%;
@@ -593,7 +618,6 @@ position: absolute;
   height: 65px;
   background-color: #292323;
   clip-path: polygon(50% 0%, 21% 100%, 94% 100%);
-
 }
 .car__window-2 {
   position: absolute;
@@ -909,5 +933,14 @@ position: absolute;
   height: 3px;
   background-color: #000;
   transform: skew(-30deg);
+}
+.car__element-6 {
+  position: absolute;
+  left: 46%;
+  width: 5px;
+  bottom: 39%;
+  height: 52px;
+  background-color: #000;
+  transform: skew(-33deg);
 }
 /* #endregion car */
