@@ -1,0 +1,88 @@
+@keyframes left-item {
+  0% {
+    rotate: 45deg;
+  }
+  50%,
+  100% {
+    rotate: 0deg;
+  }
+}
+@keyframes right-item {
+  0%,
+  50% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: -45deg;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wheel {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bike {
+  0% {
+    transform: translateY(-300%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+}
+@keyframes top {
+  0% {
+    transform: translateY(-800%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+}
+@keyframes right {
+  0% {
+    transform: translateX(300%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+}
+@keyframes bottom {
+  0% {
+    transform: translateY(1300%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+}
+@keyframes left {
+  0% {
+    transform: translateX(-2400%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+}
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; display: none; }
+}

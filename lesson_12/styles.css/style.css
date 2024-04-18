@@ -1,0 +1,1043 @@
+@import url("fonts.css");
+@import url("animation.css");
+@import url("reset.css");
+.wrapper {
+  width: 100%;
+  background-color: #74ef55;
+}
+
+.page {
+}
+
+/* #region practice */
+.practice {
+  width: 1290px;
+  padding: 20px;
+  margin: 0 auto;
+}
+/* #region car */
+.car {
+  position: relative;
+  width: 100%;
+  height: 640px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.car__container {
+  opacity: 0;
+    /* animation: fadeOut 65s forwards; */
+  }
+
+  .car:hover .car__container {
+    opacity: 1;
+    animation: forwards;
+  }
+.car__img-bg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.car__img-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-image: url('/images/road.webp');
+  background-repeat: repeat-x;
+  animation: moveRightToLeft 10s linear infinite;
+  animation-delay: 8s;
+}
+
+
+.car__sun-img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 20px;
+  top: 15%;
+  transform: translate(200%, 0);
+  transition-duration: 5s;
+}
+.car:hover .car__sun-img {
+  transform: translate(-790px, 0px);
+}
+.wheel {
+  z-index: 2;
+  bottom: 18%;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 40%;
+  background-color: #000;
+  border: 2px dashed rgba(128, 128, 128);
+}
+.wheel__center {
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: grey;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 14px dashed #000;
+  opacity: 0;
+}
+.car:hover .wheel__center {
+  animation: bottom 3s linear 1 forwards;
+  opacity: 1;
+}
+.car__wheel-1 {
+  right: 15%;
+}
+.car__wheel-2 {
+  right: 45%;
+}
+.car__wheel-3 {
+  left: 26.5%;
+  width: 100px;
+  height: 100px;
+}
+.car:hover .wheel {
+  border-radius: 50%;
+  animation-name: wheel;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+}
+.car__threshold-1 {
+  position: absolute;
+  right: 24.5%;
+  width: 255px;
+  bottom: 24%;
+  height: 25px;
+  background-color: #000;
+  opacity: 0;
+}
+.car:hover .car__threshold-1 {
+  animation: bottom 3s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__threshold-2 {
+  position: absolute;
+  right: 9%;
+  width: 70px;
+  bottom: 24%;
+  height: 25px;
+  background-color: #000;
+  border-radius: 0% 100% 45% 55% / 100% 0% 100% 0%;
+  opacity: 0;
+}
+.car:hover .car__threshold-2 {
+  animation: right 3s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__threshold-3 {
+  position: absolute;
+  left: 42%;
+  width: 40px;
+  bottom: 24%;
+  height: 25px;
+  background-color: #000;
+  border-radius: 0px 0px 0px 156px;
+  opacity: 0;
+}
+.car:hover .car__threshold-3 {
+  animation: left 3s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__hood {
+  position: absolute;
+  right: 9%;
+  width: 70px;
+  bottom: 27%;
+  height: 75px;
+  background-color: #1d4f8d;
+  border-radius: 0% 100% 100% 0% / 0% 100% 0% 100%;
+  opacity: 0;
+}
+.car:hover .car__hood {
+  animation: top 3s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__wing-block-1 {
+  position: absolute;
+  width: 145px;
+  height: 92px;
+  border-radius: 49% 50% 5% 7% / 69% 71% 4% 31%;
+  border: 5px solid rgb(17, 63, 128);
+  border-bottom: 0;
+  background-color: #000;
+  bottom: 24%;
+  left: 44.5%;
+  z-index: 1;
+}
+.car__wing-block-2 {
+  position: absolute;
+  width: 145px;
+  height: 92px;
+  border-radius: 49% 50% 5% 7% / 69% 71% 4% 31%;
+  border: 5px solid rgb(17, 63, 128);
+  border-bottom: 0;
+  background-color: #000;
+  bottom: 24%;
+  right: 14%;
+  z-index: 1;
+}
+.car__wing-1 {
+  position: absolute;
+  right: 14.5%;
+  width: 135px;
+  bottom: 26.9%;
+  height: 75px;
+  background-color: #1d4f8d;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 59% 31%, 41% 31%, 0% 50%);
+  opacity: 0;
+}
+.car:hover .car__wing-1 {
+  animation: top 4s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__wing-2 {
+  position: absolute;
+  left: 45%;
+  width: 135px;
+  bottom: 26.9%;
+  height: 75px;
+  background-color: #1d4f8d;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 59% 31%, 41% 31%, 0% 50%);
+  opacity: 0;
+}
+.car:hover .car__wing-2 {
+  animation: top 4s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__side {
+  position: absolute;
+  right: 24.7%;
+  width: 255px;
+  bottom: 27%;
+  height: 124px;
+  background-color: #1d4f8d;
+  clip-path: polygon(97% 38%, 100% 100%, 0 100%, 0 38%);
+  opacity: 0;
+}
+.car:hover .car__side {
+  animation: right 5s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__trunk {
+  position: absolute;
+  left: 42%;
+  width: 40px;
+  bottom: 27%;
+  height: 100px;
+  background-color: #1d4f8d;
+  border-radius: 100% 0% 100% 0% / 100% 100% 0% 0%;
+  opacity: 0;
+}
+.car:hover .car__trunk {
+  animation: bottom 4.5s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__top {
+  position: absolute;
+  right: 10.5%;
+  width: 525px;
+  bottom: 35.5%;
+  height: 133px;
+  background-color: #1d4f8d;
+  clip-path: polygon(0 0, 75% 55%, 100% 100%, 0% 100%);
+  opacity: 0;
+}
+.car:hover .car__top {
+  animation: top 3s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__top-back {
+  position: absolute;
+  left: 43%;
+  width: 57px;
+  bottom: 36%;
+  height: 85px;
+  background-color: #1d4f8d;
+  clip-path: polygon(100% 100%, 100% 0, 0 100%);
+  opacity: 0;
+}
+.car:hover .car__top-back {
+  animation: left 1s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__top-line {
+  position: absolute;
+  right: 25.9%;
+  width: 330px;
+  bottom: 50.2%;
+  height: 10px;
+  background-color: #000;
+  border-radius: 49% 51% 0% 100% / 100% 100% 0% 0%;
+  opacity: 0;
+}
+.car:hover .car__top-line {
+  animation: right 9s ease-in-out forwards;
+  opacity: 1;
+}
+.car__top-line-1 {
+  position: absolute;
+  right: 18%;
+  width: 59px;
+  bottom: 38.6%;
+  height: 76px;
+  background-color: #000;
+  clip-path: polygon(0 0, 1% 0, 100% 100%, 62% 100%);
+  transform: skew(51deg);
+  z-index: 2;
+}
+.car__window {
+  position: absolute;
+  right: 19.6%;
+  width: 380px;
+  bottom: 38.8%;
+  height: 105px;
+  background-color: #000;
+  clip-path: polygon(8% 39%, 79% 39%, 100% 100%, 0% 100%);
+  opacity: 0;
+}
+.car:hover .car__window {
+  animation: left 7s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__top-line-2 {
+  position: absolute;
+  right: 16.6%;
+  width: 255px;
+  bottom: 38.5%;
+  height: 75px;
+  background-color: #1d4f8d;
+  clip-path: polygon(0 0, 55% 0, 100% 100%, 10% 100%);
+  opacity: 0;
+}
+.car:hover .car__top-line-2 {
+  animation: bottom 3s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__window-1 {
+  position: absolute;
+  right: 30.7%;
+  width: 88px;
+  bottom: 38.8%;
+  height: 65px;
+  background-color: #292323;
+  clip-path: polygon(50% 0%, 21% 100%, 94% 100%);
+  opacity: 0;
+}
+.car:hover .car__window-1 {
+  animation: top 2s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__window-2 {
+  position: absolute;
+  right: 44.9%;
+  width: 48px;
+  bottom: 38.8%;
+  height: 63px;
+  background-color: #292323;
+  clip-path: polygon(0 0, 1% 0, 100% 100%, 62% 100%);
+  transform: skew(-25deg);
+  z-index: 2;
+}
+.trailer__threshold-1 {
+  position: absolute;
+  left: 34.8%;
+  width: 70px;
+  bottom: 24%;
+  height: 15px;
+  background-color: #000;
+  opacity: 0;
+}
+.car:hover .trailer__threshold-1 {
+  animation: left 7s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.trailer__threshold-2 {
+  position: absolute;
+  left: 18.8%;
+  width: 90px;
+  bottom: 24%;
+  height: 15px;
+  background-color: #000;
+  opacity: 0;
+}
+.car:hover .trailer__threshold-2 {
+  animation: left 7s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.trailer__side-1 {
+  position: absolute;
+  left: 18.8%;
+  width: 5px;
+  bottom: 24%;
+  height: 69px;
+  background-color: #000;
+  opacity: 0;
+}
+.car:hover .trailer__side-1 {
+  animation: top 7s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.trailer__side-2 {
+  position: absolute;
+  left: 40%;
+  width: 5px;
+  bottom: 24%;
+  height: 69px;
+  background-color: #000;
+  opacity: 0;
+}
+.car:hover .trailer__side-2 {
+  animation: bottom 7s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.trailer__side-3 {
+  position: absolute;
+  left: 19%;
+  width: 265px;
+  bottom: 34%;
+  height: 5px;
+  background-color: #000;
+  z-index: 2;
+}
+.trailer__side-4 {
+  position: absolute;
+  left: 20%;
+  width: 5px;
+  bottom: 24.5%;
+  height: 66px;
+  background-color: #000;
+  z-index: 2;
+}
+.trailer__side-5 {
+  position: absolute;
+  left: 21%;
+  width: 5px;
+  bottom: 24.5%;
+  height: 66px;
+  background-color: #000;
+  z-index: 2;
+}
+.trailer__side-6 {
+  position: absolute;
+  left: 22%;
+  width: 5px;
+  bottom: 24.5%;
+  height: 66px;
+  background-color: #000;
+  z-index: 2;
+}
+.trailer__side-7 {
+  position: absolute;
+  left: 23%;
+  width: 5px;
+  bottom: 24.5%;
+  height: 66px;
+  background-color: #000;
+  z-index: 2;
+}
+.trailer__side-8 {
+  position: absolute;
+  left: 24%;
+  width: 5px;
+  bottom: 24.5%;
+  height: 66px;
+  background-color: #000;
+  z-index: 2;
+}
+.trailer__side-9 {
+  position: absolute;
+  left: 25%;
+  width: 5px;
+  bottom: 24.5%;
+  height: 66px;
+  background-color: #000;
+  z-index: 2;
+}
+.trailer__side-10 {
+  position: absolute;
+  left: 26%;
+  width: 5px;
+  bottom: 24%;
+  height: 69px;
+  background-color: #000;
+  z-index: 2;
+}
+.trailer__side-11 {
+  position: absolute;
+  left: 26.5%;
+  width: 5px;
+  bottom: 24.2%;
+  height: 65px;
+  background-color: #000;
+  z-index: 2;
+  transform: skew(-20deg, -20deg);
+}
+.trailer__side-12 {
+  position: absolute;
+  left: 33.8%;
+  width: 5px;
+  bottom: 24.2%;
+  height: 64px;
+  background-color: #000;
+  z-index: 2;
+  transform: skew(20deg, 20deg);
+}
+.trailer__side-13 {
+  position: absolute;
+  left: 34.6%;
+  width: 5px;
+  bottom: 24%;
+  height: 69px;
+  background-color: #000;
+  z-index: 2;
+}
+.trailer__side-14 {
+  position: absolute;
+  left: 35.6%;
+  width: 5px;
+  bottom: 24%;
+  height: 69px;
+  background-color: #000;
+  z-index: 2;
+}
+.trailer__side-15 {
+  position: absolute;
+  left: 36.6%;
+  width: 5px;
+  bottom: 24%;
+  height: 69px;
+  background-color: #000;
+  z-index: 2;
+}
+.trailer__side-16 {
+  position: absolute;
+  left: 37.6%;
+  width: 5px;
+  bottom: 24%;
+  height: 69px;
+  background-color: #000;
+  z-index: 2;
+}
+.trailer__side-17 {
+  position: absolute;
+  left: 38.6%;
+  width: 5px;
+  bottom: 24%;
+  height: 69px;
+  background-color: #000;
+  z-index: 2;
+}
+.trailer__side-18 {
+  position: absolute;
+  left: 39.6%;
+  width: 5px;
+  bottom: 24%;
+  height: 69px;
+  background-color: #000;
+  z-index: 2;
+}
+.trailer__side-19 {
+  position: absolute;
+  left: 27.5%;
+  width: 71px;
+  bottom: 30.1%;
+  height: 2px;
+  background-color: #000;
+  z-index: 2;
+}
+.trailer__side-20 {
+  position: absolute;
+  left: 40.3%;
+  width: 31px;
+  bottom: 25.1%;
+  height: 5px;
+  background-color: #000;
+  opacity: 0;
+}
+.car:hover .trailer__side-20 {
+  animation: top 8s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.trailer__img {
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  bottom: 24%;
+  left: 17.7%;
+  opacity: 0;
+}
+.car:hover .trailer__img {
+  animation: bottom 11s ease-in 1 forwards;
+  opacity: 1;
+}
+.car__headlight {
+  position: absolute;
+  width: 40px;
+  bottom: 29%;
+  right: 9.1%;
+  height: 35px;
+  background-color: #fff;
+  border-radius: 32% 68% 100% 0% / 0% 100% 0% 100%;
+  border: 2px solid #000;
+  opacity: 0;
+}
+.car:hover .car__headlight {
+  animation: right 4s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__turn-signal {
+  position: absolute;
+  width: 42px;
+  bottom: 27%;
+  right: 9%;
+  height: 20px;
+  background-color: #ae6a0a;
+  border-radius: 32% 15% 100% 0% / 0% 100% 0% 100%;
+  border: 2px solid #000;
+opacity: 0;
+}
+.car:hover .car__turn-signal {
+  animation: right 2s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__turn-signal-back {
+  position: absolute;
+  width: 20px;
+  bottom: 27%;
+  left: 42%;
+  height: 20px;
+  background-color: #ae6a0a;
+  border-radius: 100% 0% 100% 94% / 100% 100% 0% 0%;
+  border: 2px solid #000;
+  opacity: 0;
+}
+.car:hover .car__turn-signal-back {
+  animation: left 2s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__headlight-back {
+  position: absolute;
+  width: 20px;
+  bottom: 29%;
+  left: 42%;
+  height: 60px;
+  background-color: #850808;
+  border-radius: 100% 0% 100% 0% / 100% 100% 0% 0%;
+  border: 2px solid #000;
+  opacity: 0;
+}
+.car:hover .car__headlight-back {
+  animation: left 5s ease-in-out 1 forwards;
+  opacity: 1;
+}
+.car__element {
+  position: absolute;
+  left: 65.7%;
+  width: 3px;
+  bottom: 24%;
+  height: 160px;
+  background-color: #000;
+  opacity: 0;
+}
+.car:hover .car__element {
+  animation: top 5s ease-in-out 1 forwards;
+  opacity: 1;
+}
+
+.car__element-1 {
+  position: absolute;
+  left: 50.8%;
+  width: 3px;
+  bottom: 37.4%;
+  height: 78px;
+  transform: skew(-26deg);
+  background-color: #000;
+opacity: 0;
+}
+.car:hover .car__element-1 {
+  animation: top 5s ease-in-out 1 forwards;
+  opacity: 1;
+}
+
+.car__element-2 {
+  position: absolute;
+  right: 22.5%;
+  width: 4px;
+  bottom: 38.6%;
+  height: 69px;
+  background-color: #000;
+  transform: skew(51deg);
+opacity: 0;
+}
+.car:hover .car__element-2 {
+  animation: top 5s ease-in-out 1 forwards;
+  opacity: 1;
+}
+
+.car__element-3 {
+  position: absolute;
+  right: 26%;
+  width: 270px;
+  bottom: 49%;
+  height: 3px;
+  background-color: #000;
+  opacity: 0;
+}
+.car:hover .car__element-3 {
+  animation: left 5s ease-in-out 1 forwards;
+  opacity: 1;
+}
+
+.car__element-4 {
+  position: absolute;
+  right: 30%;
+  width: 30px;
+  bottom: 35.6%;
+  height: 3px;
+  background-color: #000;
+  transform: skew(-30deg);
+  opacity: 0;
+}
+.car:hover .car__element-4 {
+  animation: bottom s ease-in-out 1 forwards;
+  opacity: 1;
+}
+
+.car__element-5 {
+  position: absolute;
+  right: 42%;
+  width: 36px;
+  bottom: 35.6%;
+  height: 3px;
+  background-color: #000;
+  transform: skew(-30deg);
+  opacity: 0;
+}
+.car:hover .car__element-5 {
+  animation: bottom 6s ease-in-out 1 forwards;
+  opacity: 1;
+}
+
+.car__element-6 {
+  position: absolute;
+  left: 46.3%;
+  width: 5px;
+  bottom: 42%;
+  height: 52px;
+  background-color: #000;
+  transform: skew(-33deg);
+  opacity: 0;
+}
+.car:hover .car__element-6 {
+  animation: top 6s ease-in-out 1 forwards;
+  opacity: 1;
+}
+
+/* #endregion car */
+/* #region animations */
+.practice__animations {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  background-image: url("../images/cosmos.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.animation__stars {
+  position: relative;
+  left: 60px;
+  top: 20px;
+  width: 250px;
+}
+.star {
+  transform: translate(-200%, 0);
+  transition-duration: 0.5s;
+}
+.star:nth-child(1) {
+  transition-duration: 0s;
+}
+.star:nth-child(2) {
+  transition-duration: 0.3s;
+}
+.star:nth-child(3) {
+  transition-duration: 0.5s;
+}
+.star:nth-child(4) {
+  transition-duration: 0.7s;
+}
+.star:nth-child(5) {
+  transition-duration: 0.9s;
+}
+.animation:hover .star {
+  transform: translate(0px, 0px);
+}
+.practice__animations.animation span {
+  display: inline-block;
+  color: #fff;
+  font-style: 16px;
+}
+.star__1 {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: rgb(246, 246, 242);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  transition-duration: 0.2s;
+}
+.star__1:hover {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: rgb(247, 247, 76);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  transition-duration: 0.6s;
+  transform: scale(1.3);
+}
+.star__2 {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: rgb(246, 246, 242);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  transition-duration: 0.2s;
+}
+.animation__stars:hover .star__2 {
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  background-color: rgb(247, 247, 76);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  transition-duration: 0.3s, 0.7s, 0.8s;
+  transition-property: background-color, width, height, margin;
+}
+.star__3 {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: rgb(246, 246, 242);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+.animation__stars:hover .star__3 {
+  width: 90px;
+  height: 70px;
+  margin: 10px;
+  background-color: rgb(247, 247, 76);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  transition-delay: 0.9s, 0.3s, 0.2s;
+  transition-duration: 0.3s, 0.7s, 0.8s;
+  transition-property: background-color, width, height, margin;
+}
+.star__4 {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: rgb(246, 246, 242);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+.animation__stars:hover .star__4 {
+  width: 90px;
+  height: 70px;
+  margin: 10px;
+  background-color: rgb(247, 247, 76);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  transition-property: background-color, width, height, margin;
+  transition-duration: 0.3s, 0.7s, 0.8s;
+  transition-timing-function: cubic-bezier(0.12, 0.94, 0.83, 0.67);
+  transition-delay: 0.9s, 0.3s, 0.2s;
+}
+.star__5 {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: rgb(246, 246, 242);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+.animation__stars:hover .star__5 {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-color: rgb(247, 247, 76);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  transition-property: background-color, width, height, margin;
+  transition-duration: 0.3s, 0.7s, 0.8s;
+  transition-timing-function: cubic-bezier(0.12, 0.94, 0.83, 0.67);
+  animation-name: rotate;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+/* #endregion animations */
+/* #region newton */
+.newton {
+  top: 20px;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  border-top: 10px solid #0f547f;
+  position: relative;
+}
+.newton:hover .newton__item {
+  animation-play-state: paused;
+}
+.newton__item {
+  position: absolute;
+  top: -10px;
+  height: 100%;
+  width: 33.3%;
+  transform-origin: top;
+}
+.newton__item:nth-child(1) {
+  left: 0;
+  animation: left-item 1s infinite ease-in alternate;
+}
+.newton__item:nth-child(2) {
+  left: 33.333%;
+}
+.newton__item:nth-child(3) {
+  right: 0;
+  animation: right-item 1s infinite ease-in alternate;
+}
+.newton__item::before {
+  content: "";
+  width: 10px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  height: 100%;
+  background-color: #3093c5;
+}
+.newton__item::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle at top, #0f547f, #000);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  box-shadow: 30px 30px 20px 1px rgb(0, 0, 0, 0.2);
+}
+/* #endregion newton */
