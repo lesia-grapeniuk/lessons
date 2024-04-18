@@ -52,7 +52,7 @@
   background-image: url("../images/road.webp");
   background-repeat: repeat-x;
   animation: moveRightToLeft 10s linear infinite;
-  animation-delay: 6s;
+  animation-delay: 5.5s;
 }
 
 .car__sun-img {
