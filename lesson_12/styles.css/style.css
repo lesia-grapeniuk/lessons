@@ -64,7 +64,7 @@
   transition-duration: 5s;
 }
 .car:hover .car__sun-img {
-  transform: translate(-790px, 0px);
+  transform: translate(-1130px, 0px);
 }
 .wheel {
   z-index: 2;
@@ -712,7 +712,7 @@
   opacity: 0;
 }
 .car:hover .car__element-4 {
-  animation: bottom 1 ease-in-out 1 forwards;
+  animation: bottom ease-in-out 1 forwards;
   opacity: 1;
 }
 
