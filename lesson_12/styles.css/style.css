@@ -22,16 +22,18 @@
   height: 640px;
   margin: 0 auto;
   margin-bottom: 20px;
+  background-image: url(../images/rider.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .car__container {
   opacity: 0;
-    /* animation: fadeOut 65s forwards; */
-  }
+}
 
-  .car:hover .car__container {
-    opacity: 1;
-    animation: forwards;
-  }
+.car:hover .car__container {
+  opacity: 1;
+  animation: forwards;
+}
 .car__img-bg {
   width: 100%;
   height: 100%;
@@ -39,26 +41,25 @@
   position: relative;
 }
 
-.car__img-bg::before {
-  content: '';
+.car:hover .car__img-bg::before {
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 200%;
   height: 100%;
-  background-image: url('../images/road.webp');
+  background-image: url("../images/road.webp");
   background-repeat: repeat-x;
   animation: moveRightToLeft 10s linear infinite;
   animation-delay: 8s;
 }
-
 
 .car__sun-img {
   width: 100px;
   height: 100px;
   position: absolute;
   right: 20px;
-  top: 15%;
+  top: 5%;
   transform: translate(200%, 0);
   transition-duration: 5s;
 }
@@ -579,7 +580,7 @@
   opacity: 0;
 }
 .car:hover .trailer__img {
-  animation: bottom 11s ease-in 1 forwards;
+  animation: top 11s ease-in 1 forwards;
   opacity: 1;
 }
 .car__headlight {
@@ -606,7 +607,7 @@
   background-color: #ae6a0a;
   border-radius: 32% 15% 100% 0% / 0% 100% 0% 100%;
   border: 2px solid #000;
-opacity: 0;
+  opacity: 0;
 }
 .car:hover .car__turn-signal {
   animation: right 2s ease-in-out 1 forwards;
@@ -664,7 +665,7 @@ opacity: 0;
   height: 78px;
   transform: skew(-26deg);
   background-color: #000;
-opacity: 0;
+  opacity: 0;
 }
 .car:hover .car__element-1 {
   animation: top 5s ease-in-out 1 forwards;
@@ -679,7 +680,7 @@ opacity: 0;
   height: 69px;
   background-color: #000;
   transform: skew(51deg);
-opacity: 0;
+  opacity: 0;
 }
 .car:hover .car__element-2 {
   animation: top 5s ease-in-out 1 forwards;
@@ -711,7 +712,7 @@ opacity: 0;
   opacity: 0;
 }
 .car:hover .car__element-4 {
-  animation: bottom s ease-in-out 1 forwards;
+  animation: bottom 1 ease-in-out 1 forwards;
   opacity: 1;
 }
 
@@ -787,7 +788,7 @@ opacity: 0;
 .practice__animations.animation span {
   display: inline-block;
   color: #fff;
-  font-style: 16px;
+  font-size: 16px;
 }
 .star__1 {
   width: 50px;

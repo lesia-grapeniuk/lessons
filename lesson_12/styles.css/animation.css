@@ -1,19 +1,19 @@
 @keyframes left-item {
   0% {
-    rotate: 45deg;
+    transform: rotate(45deg);
   }
   50%,
   100% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
 }
 @keyframes right-item {
   0%,
   50% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   100% {
-    rotate: -45deg;
+    transform: rotate(-45deg);
   }
 }
 @keyframes rotate {
@@ -21,7 +21,7 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(-360deg);
   }
 }
 
@@ -81,8 +81,4 @@
   100% {
     transform: translateX(-50%);
   }
-}
-@keyframes fadeOut {
-  0% { opacity: 1; }
-  100% { opacity: 0; display: none; }
 }
