@@ -46,7 +46,7 @@
   left: 0;
   width: 200%;
   height: 100%;
-  background-image: url('/images/road.webp');
+  background-image: url('../images/road.webp');
   background-repeat: repeat-x;
   animation: moveRightToLeft 10s linear infinite;
   animation-delay: 8s;
