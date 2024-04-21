@@ -108,10 +108,10 @@
 }
 .car:hover .wheel {
   border-radius: 50%;
-  animation-name: wheel;
-  animation-duration: 0.3s;
-  animation-iteration-count: infinite;
+  animation: rotate 0.3s linear infinite; /* Скорочений варіант */
 }
+
+
 .car__threshold-1 {
   position: absolute;
   right: 24.5%;
@@ -1021,7 +1021,7 @@
 }
 .newton__item:nth-child(3) {
   right: 0;
-  animation: right-item 1s infinite ease-in alternate;
+  animation: right-item 1s infinite ease-out alternate;
 }
 .newton__item::before {
   content: "";
