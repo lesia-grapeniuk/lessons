@@ -573,7 +573,13 @@
   font-family: "Proxima Nova";
   font-size: 19px;
   font-weight: 600;
-  line-height: 1.26; /* 126.316% */
+  line-height: 1.26;
+  transition: 0.3s;
+}
+.card-product__title:hover {
+  color: #ffbc57;
+  transform: scale(1.05);
+  transition: 0.5s;
 }
 .card-product__wrapper-section {
   display: flex;
