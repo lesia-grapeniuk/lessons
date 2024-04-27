@@ -528,7 +528,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
   row-gap: 20px;
 }
 .block-products__link-card {
@@ -568,6 +568,7 @@
   line-height: 1.69; /* 169.231% */
 }
 .card-product__title {
+  height: 52px;
   flex-wrap: wrap;
   color: #2b2929;
   font-family: "Proxima Nova";
@@ -575,6 +576,8 @@
   font-weight: 600;
   line-height: 1.26;
   transition: 0.3s;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 .card-product__title:hover {
   color: #ffbc57;
@@ -596,6 +599,7 @@
   font-weight: 300;
   line-height: 2.2;
   margin-left: 10px;
+
 }
 .card-product__buying {
   display: flex;
