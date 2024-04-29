@@ -55,7 +55,7 @@
 }
 
 .menu-button__text:hover {
-  font-size: 21px;
+  color: #3b2c0f;
   transition: all 0.2s;
 }
 
@@ -144,6 +144,8 @@
 /* #region sub-menu */
 .sub-menu {
   width: 326px;
+  overflow-y: auto;
+  max-width: 326px;
   opacity: 0;
   visibility: hidden;
   background-color: #fff;
@@ -218,7 +220,7 @@
 .popular-categories__cards {
   width: 100%;
   box-sizing: border-box;
-  margin: 40px 0;
+  padding: 40px 0;
 }
 
 .card {
@@ -268,6 +270,7 @@
   line-height: 1.4;
   top: 10px;
   left: 20px;
+  margin-right: 15px;
 }
 
 .card__number {
