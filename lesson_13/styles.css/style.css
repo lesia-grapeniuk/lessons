@@ -50,6 +50,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 15px 0;
+  flex-wrap: wrap;
 }
 .menu-container {
 }
@@ -207,6 +208,7 @@
   transition: 0.5s;
 }
 .search-block__text {
+  margin-right: 20px;
   width: 100%;
   padding: 10px 0 10px 15px;
   color: #b1b1b1;
@@ -293,6 +295,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .items-discounts__item {
@@ -342,6 +345,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .rooms-list {
@@ -431,8 +435,10 @@
   justify-content: space-between;
   align-items: center;
   margin: 20px 20px 0;
+  gap: 20px;
 }
 .block-categories__name {
+  margin-right: 20px;
   color: #2b2929;
   font-family: "Proxima Nova";
   font-size: 20px;
