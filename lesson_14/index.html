@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 14</title>
+    <link rel="stylesheet" href="styles.css/style.css">
+    <link rel="icon" href="images/logo_kravato.svg" type="image/svg">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- header -->
+      <header class="header">
+        <!-- top-header -->
+        <div class="header__top-wrapper">
+          <div class="top-header">
+            <nav class="top-header__container-menu menu-container">
+              <ul class="menu-container__list">
+                <li class="menu-container__item">
+                  <a href="#" class="menu-container__link">Про нас</a>
+                </li>
+                <li class="menu-container__item">
+                  <a href="#" class="menu-container__link">Оплата</a>
+                </li>
+                <li class="menu-container__item">
+                  <a href="#" class="menu-container__link">Доставка та збірка</a
+                  >
+                </li>
+                <li class="menu-container__item">
+                  <a href="#" class="menu-container__link">Відгуки</a>
+                </li>
+                <li class="menu-container__item">
+                  <a href="#" class="menu-container__link">Блог</a>
+                </li>
+                <li class="menu-container__item">
+                  <a href="#" class="menu-container__link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="top-header__container-help help-container">
+              <div class="help-container__wrapper">
+                <span class="help-container__text"
+                  >допомога і консультація:</span
+                >
+                <ul class="help-container__list">
+                  <li class="help-container__item">
+                    <a href="#" class="help-container__link">
+                      <img
+                        src="images/categories/icons/whatsapp.svg"
+                        alt="лого застосунку вотсап"
+                        class="help-container__img">
+                    </a>
+                  </li>
+                  <li class="help-container__item">
+                    <a href="#" class="help-container__link">
+                      <img
+                        src="images/categories/icons/telegram.svg"
+                        alt="лого застосунку телеграм"
+                        class="help-container__img">
+                    </a>
+                  </li>
+                  <li class="help-container__item">
+                    <a href="#" class="help-container__link">
+                      <img
+                        src="images/categories/icons/viber.svg"
+                        alt="лого застосунку вайбер"
+                        class="help-container__img">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <form action="#" class="top-header__container-language language">
+                <select
+                  id="lang"
+                  name="form[]"
+                  class="language__select">
+                  <option class="language__option" value="ua">UA</option>
+                  <option class="language__option" value="en">EN</option>
+                  <option class="language__option" value="ru">RU</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- main-header -->
+        <div class="wrapper-main-header main-header">
+          <div class="main-header main-header--margin-top">
+            <a href="#" class="main-header__link logo-link">
+              <img
+                src="images/logo_kravato.svg"
+                alt="логотип кравато"
+                class="logo-link__img">
+            </a>
+
+            <button class="main-header__button catalog-button">
+              <img
+                src="images/categories/icons/menu-catalog.svg"
+                alt="іконка кнопки каталогу"
+                class="catalog-button__icon">
+
+              <span class="catalog-button__name">Каталог</span>
+            </button>
+
+            <div class="main-header__search-bar search-block">
+              <form action="#" class="search-block__form">
+                <input class="search-block__input" type="text" placeholder="Пошук товарів">
+                <button type="submit" class="search-block__button"></button>
+              </form>
+            </div>
+
+            <div class="main-header__conection conection-header">
+              <img
+                src="images/categories/icons/call.svg"
+                alt="іконка телефонної слухавки"
+                class="conection-header__icon-handset">
+
+              <div class="conection-header__schedule schedule">
+                <span class="schedule__span">Щодня з 9:00 до 18:00</span>
+                <p class="schedule__tel">
+                  <a href="tel:+380679294545">067 929-45-45</a>
+                </p>
+              </div>
+
+              <img
+                src="images/categories/icons/arrow.svg"
+                alt="стрілка для вибору номерів телефона"
+                class="conection-header__icon-choice-numb">
+            </div>
+
+            <div class="main-header__icons-end icons-end">
+              <a href="#" class="main-header__link">
+                <img
+                  src="images/categories/icons/obrane.svg"
+                  alt="іконка обраних товарів"
+                  class="main-header__icon-favorite">
+              </a>
+
+              <a href="#" class="main-header__link">
+                <img
+                  src="images/categories/icons/korzina.svg"
+                  alt="іконка корзина товарів"
+                  class="main-header__icon-basket">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom-header -->
+
+        <div class="bottom-header">
+          <ul class="bottom-header__discounts items-discounts">
+            <li class="items-discounts__item items-discounts__item--action">
+              <a href="#" class="items-discounts__link">Акції</a>
+            </li>
+
+            <li class="items-discounts__item items-discounts__item--sale">
+              <a href="#" class="items-discounts__link">Розпродаж</a>
+            </li>
+
+            <li class="items-discounts__item items-discounts__item--credit">
+              <a href="#" class="items-discounts__link">Купити в кредит</a>
+            </li>
+          </ul>
+
+          <ul class="bottom-header__list-rooms rooms-list">
+            <li class="rooms-list__item">
+              <a href="#" class="rooms-list__link">Дитяча</a>
+            </li>
+
+            <li class="rooms-list__item">
+              <a href="#" class="rooms-list__link">Кухня</a>
+            </li>
+
+            <li class="rooms-list__item">
+              <a href="#" class="rooms-list__link">Ванна</a>
+            </li>
+
+            <li class="rooms-list__item">
+              <a href="#" class="rooms-list__link">Спальня</a>
+            </li>
+
+            <li class="rooms-list__item">
+              <a href="#" class="rooms-list__link">Передпокій</a>
+            </li>
+
+            <li class="rooms-list__item">
+              <a href="#" class="rooms-list__link">Вітальня</a>
+            </li>
+
+            <li class="rooms-list__item">
+              <a href="#" class="rooms-list__link">Офіс</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <!-- main -->
+      <main class="page">
+        <div class="ordering">
+          <div class="ordering__block">
+            <h1 class="title-main">Оформлення замовлення</h1>
+
+            <div class="ordering__info-buyer buyer-info">
+              <div class="ordering__top-block">
+                <img
+                  src="images/icons/icon-info.svg"
+                  alt="#"
+                  class="ordering__img"/>
+                <h2 class="ordering__title">Інформація про покупця</h2>
+              </div>
+
+              <form class="info-block" action="#">
+                <input
+                  name="form[]"
+                  required
+                  type="text"
+                  autocomplete=""
+                  placeholder="Прізвище"
+                  tabindex="1"
+                  class="info-block__input">
+                <input
+                  name="form[]"
+                  required
+                  type="tel"
+                  placeholder="Контактний телефон"
+                  tabindex="3"
+                  class="info-block__input">
+                <input
+                  name="form[]"
+                  required
+                  type="text"
+                  placeholder="Імʼя"
+                  tabindex="2"
+                  class="info-block__input">
+                <input
+                  name="form[]"
+                  required
+                  type="email"
+                  placeholder="E-mail"
+                  tabindex="4"
+                  class="info-block__input">
+                <input
+                  name="form[]"
+                  type="text"
+                  placeholder="По батькові"
+                  tabindex="5"
+                  class="info-block__input">
+              </form>
+
+              <form class="another-person-receive" action="#">
+                <label class="another-person-receive__label">
+                  <input
+                    type="checkbox"
+                    name="form[]"
+                    class="another-person-receive__input">
+                  <span class="another-person-receive__text"
+                    >Отримуватиме замовлення інша людина</span
+                  >
+                </label>
+              </form>
+            </div>
+
+            <div class="liner"></div>
+
+            <div class="ordering__delivery delivery-block">
+              <div class="ordering__top-block">
+                <img
+                  src="images/icons/icon-dostavka.svg"
+                  alt="#"
+                  class="ordering__img">
+                <h2 class="ordering__title">Вибір способу доставки</h2>
+              </div>
+
+              <div class="delivery-block">
+                <div class="delivery-block__radio-buttons radio-delivery">
+                  <label
+                  for="radio-bl-1"
+                  class="radio-delivery__blocks">
+                    <input
+                      id="radio-bl-1"
+                      type="radio"
+                      name="radio"
+                      checked
+                      class="radio-delivery__input">
+                    <img src="images/icons/check-circle.svg" alt="іконка яка вказує на виконану доставку" class="radio-delivery__img">
+                    <span class="radio-delivery__text">Самовивіз із магазину</span>
+                    <span class="radio-delivery__additional-info">Бесплатно</span>
+                  </label>
+                </div>
+
+                <div class="delivery-block__radio-buttons radio-delivery">
+                  <label
+                  for="radio-bl-2"
+                  class="radio-delivery__blocks">
+                    <input
+                      id="radio-bl-3"
+                      type="radio"
+                      name="radio"
+                      checked
+                      class="radio-delivery__input">
+                    <img src="images/icons/np.svg" alt="іконка яка вказує на виконану доставку" class="radio-delivery__img">
+                    <span class="radio-delivery__text">Бесплатно</span>
+                    <span class="radio-delivery__additional-info">≈ від 500 грн</span>
+                  </label>
+                </div>
+
+                <div class="delivery-block__radio-buttons radio-delivery">
+                  <label
+                  for="radio-bl-3"
+                  class="radio-delivery__blocks">
+                    <input
+                      id="radio-bl-3"
+                      type="radio"
+                      name="radio"
+                      checked
+                      class="radio-delivery__input">
+                    <img src="images/icons/shop.svg" alt="іконка яка вказує на виконану доставку" class="radio-delivery__img">
+                    <span class="radio-delivery__text">Доставка кур'єром</span>
+                    <span class="radio-delivery__additional-info">≈ від 200 грн</span>
+                  </label>
+                </div>
+              </div>
+
+                <div class="delivery-block__info info-section">
+                  <div class="info-section__text">
+                    <span class="info-section__1">Графік роботи: щодня з 9:00 до 18:00
+                    </span>
+                    <span class="info-section__2">м. Київ, пров. Ізяславський 52, пов. 2</span>
+                  </div>
+                    <a
+                      href="#"
+                      class="info-section__link-map"
+                      target="_blank">
+                      <img
+                        src="images/map.svg"
+                        alt="#"
+                        class="info-section__img">
+                        <span class="info-section__btn-text">На мапі</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="liner"></div>
+
+            <div class="ordering__payment payment-block">
+              <div class="ordering__top-block">
+                <img
+                  src="images/icons/icon-oplata.svg"
+                  alt="#"
+                  class="ordering__img">
+                <h2 class="ordering__title">Вибір способу оплати</h2>
+              </div>
+
+              <form class="payment-block__choose-payment payment-selection">
+                <label
+                for="checked" class="payment-selection__radio">
+                  <input
+                    id="checked"
+                    type="radio"
+                    value="yes"
+                    name="form[]"
+                    class="payment-selection__input">
+                    <span class="payment-selection__text">Готівкою при отриманні (Післясплата)</span>
+                </label>
+
+                <label
+                for="checked-1" class="payment-selection__radio">
+                  <input
+                    checked
+                    id="checked-1"
+                    type="radio"
+                    name="form[]"
+                    value="yes"
+                    class="payment-selection__input">
+                    <span class="payment-selection__text">Оплата карткою на сайті</span>
+                    <img
+                      src="images/icons/master-card-logo.svg"
+                      alt="#"
+                      class="payment-selection__img">
+                    <img
+                      src="images/icons/visa-card-logo.svg"
+                      alt="#"
+                      class="payment-selection__img">
+                </label>
+
+                <label
+                for="checked-2" class="payment-selection__radio">
+                  <input
+                    id="checked-2"
+                    value="yes"
+                    type="radio"
+                    name="form[]"
+                    class="payment-selection__input">
+                    <span class="payment-selection__text">Privat Pay</span>
+                    <img
+                      src="images/icons/privat-pay-logo.svg"
+                      alt="#"
+                      class="payment-selection__img">
+                </label>
+
+                <label
+                for="checked-3" class="payment-selection__radio">
+                  <input
+                    id="checked-3"
+                    type="radio"
+                    value="yes"
+                    name="form[]"
+                    class="payment-selection__input">
+                    <span class="payment-selection__text">Кредит від Krovato</span>
+                </label>
+
+                <label
+                for="checked-4" class="payment-selection__radio">
+                  <input
+                    id="checked-4"
+                    type="radio"
+                    value="yes"
+                    name="form[]"
+                    class="payment-selection__input">
+                    <span class="payment-selection__text">Оплата частинами ПриватБанк</span>
+                    <img
+                      src="images/icons/privaty-credit-logo.svg"
+                      alt="#"
+                      class="payment-selection__img">
+                </label>
+
+                <label
+                for="checked-5" class="payment-selection__radio">
+                  <input
+                    id="checked-5"
+                    type="radio"
+                    value="yes"
+                    name="form[]"
+                    class="payment-selection__input">
+                    <span class="payment-selection__text">Оплата частинами МоноБанк</span>
+                    <img
+                      src="images/icons/mono-bank-logo.svg"
+                      alt="#"
+                      class="payment-selection__img">
+                </label>
+              </form>
+            </div>
+
+            <div class="liner"></div>
+
+            <div class="ordering__comment comment-block">
+            <div class="ordering__top-block">
+              <img
+                src="images/icons/icon-comment.svg"
+                alt="#"
+                class="ordering__img">
+              <h2 class="ordering__title">Коментар до замовлення</h2>
+            </div>
+
+            <div class="comment-block__form-wrapper">
+          <form action="#" class="comment-block__form">
+            <textarea
+              placeholder="Ваш коментар"
+              name="form[]"
+              class="comment-block__textarea">
+            </textarea>
+          </form>
+        </div>
+        <div class="comment-block__wrapper-btn">
+        <button class="comment-block__confirm-button" type="submit">Оформити замовлення</button>
+      </div>
+        </div>
+
+        </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <span>©KROVATO - Технології сну - 2022. Всі права захищені.</span>
+      </footer>
+    </div>
+  </body>
+</html>
