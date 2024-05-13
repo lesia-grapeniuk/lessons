@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 15</title>
+  <link rel="stylesheet" href="styles.css/style.css">
+  <link rel="icon" href="images/logo_kravato.svg" type="image/svg">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <!-- header-top -->
+      <div class="header__top top-header">
+        <div class="top-header__container">
+          <div class="top-header__menu menu-top-header">
+            <ul class="menu-top-header__list">
+              <li class="menu-top-header__item">
+                <a href="#" class="menu-top-header__link">Про нас</a>
+              </li>
+              <li class="menu-top-header__item">
+                <a href="#" class="menu-top-header__link">Оплата</a>
+              </li>
+              <li class="menu-top-header__item">
+                <a href="#" class="menu-top-header__link">Доставка та збірка</a>
+              </li>
+              <li class="menu-top-header__item">
+                <a href="#" class="menu-top-header__link">Відгуки</a>
+              </li>
+              <li class="menu-top-header__item">
+                <a href="#" class="menu-top-header__link">Блог</a>
+              </li>
+              <li class="menu-top-header__item">
+                <a href="#" class="menu-top-header__link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="top-header__action">
+            <div class="top-header__social social-top-header">
+              <div class="social-top-header__label">Допомога і консультація:</div>
+                <ul class="social-top-header__list">
+                  <li class="social-top-header__item">
+                    <a href="#" class="social-top-header__link social-top-header__link--whatsapp">
+                      <img src="images/icons_header/whatsapp.svg" alt="іконка месенджера вотсап">
+                    </a>
+                  </li>
+                  <li class="social-top-header__item">
+                    <a href="#" class="social-top-header__link social-top-header__link--whatsapp">
+                      <img src="images/icons_header/telegram.svg" alt="іконка месенджера телеграм">
+                    </a>
+                  </li>
+                  <li class="social-top-header__item">
+                    <a href="#" class="social-top-header__link social-top-header__link--whatsapp">
+                      <img src="images/icons_header/viber.svg" alt="іконка месенджера вайбер">
+                    </a>
+                  </li>
+                </ul>
+            </div>
+            <div class="top-header__language language-top-header">
+              <div class="language-top-header__label">UA</div>
+              <ul class="language-top-header__list">
+                <li class="language-top-header__item">
+                  <a href="#" class="language-top-header__link">EN</a>
+                </li>
+                <li class="language-top-header__item">
+                  <a href="#" class="language-top-header__link">CZ</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header-body -->
+
+      <div class="header__body body-header">
+        <div class="body-header__container">
+          <div class="body-header__logo">
+            <img 
+              src="images/logo_kravato.svg"
+              alt="логотип кравато">
+            </div>
+          <button type="button" class="body-header__catalog">
+            <span>Каталог</span>
+          </button>
+          <form action="#" class="body-header__search search-body-header">
+            <input
+              type="search"
+              placeholder="Пошук товарів"
+              class="search-body-header__input">
+            <button type="submit" class="search-body-header__button"></button>
+          </form>
+          <div class="body-header__contacts contacts-body-header">
+            <a href="tel:0674544280" class="contacts-body-header__icon">
+              <img src="images/icons_header/call.svg" alt="іконка, посилання телефонної трубки">
+            </a>
+            <div class="contacts-body-header__body">
+              <div class="contacts-body-header__label">Щодня з 9:00 до 18:00</div>
+              <div class="contacts-body-header__phones phones-contacts-header">
+                <a href="tel:0679294545" class="phones-contacts-header__current">067 929-45-45</a>
+                <div class="phones-contacts-header__wrapper-items">
+                <ul class="phones-contacts-header__list">
+                  <li class="phones-contacts-header__item">
+                    <a href="tel:0501334545" class="phones-contacts-header__link">050 133-45-45</a>
+                  </li>
+                  <li class="phones-contacts-header__item">
+                    <a href="tel:0931707545" class="phones-contacts-header__link">093 170-75-45</a>
+                  </li>
+                  <li class="phones-contacts-header__item">
+                    <button onclick="callMe()">
+                      <span>Передзвоніть мені</span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="body-header__actions">
+            <a href="#" class="body-header__actions-link body-header__actions-link--favorite">
+              <img src="images/icons_header/obrane.svg" alt="іконка обраного товару">
+            </a>
+            <a href="#" class="body-header__actions-link body-header__actions-link--basket">
+              <img src="images/icons_header/korzina.svg" alt="іконка корзини товару">
+            </a>
+          </div>
+        </div>
+      </div>
+
+        <!-- header-body -->
+
+        <div class="header__bottom bottom-header">
+          <div class="bottom-header__container">
+            <div class="bottom-header__sections sections-menu">
+              <ul class="sections-menu__list">
+                <li class="sections-menu__item">
+                  <a href="#" class="sections-menu__link sections-menu__link--stars">Акції</a>
+                </li>
+                  <a href="#" class="sections-menu__link sections-menu__link--sale">Розпродаж</a>
+                </li>
+                  <a href="#" class="sections-menu__link sections-menu__link--part">Купити в кредит</a>
+                </li>
+              </ul>
+            </div>
+            <div class="bottom-header__rooms rooms-menu">
+              <ul class="rooms-menu__list">
+                <li class="rooms-menu__item">
+                  <a href="#" class="rooms-menu__link">Дитяча</a>
+                </li>
+                <li class="rooms-menu__item">
+                  <a href="#" class="rooms-menu__link">Кухня</a>
+                </li>
+                <li class="rooms-menu__item">
+                  <a href="#" class="rooms-menu__link">Ванна</a>
+                </li>
+                <li class="rooms-menu__item">
+                  <a href="#" class="rooms-menu__link">Спальня</a>
+                </li>
+                <li class="rooms-menu__item">
+                  <a href="#" class="rooms-menu__link">Передпокій</a>
+                </li>
+                <li class="rooms-menu__item">
+                  <a href="#" class="rooms-menu__link">Вітальня</a>
+                </li>
+                <li class="rooms-menu__item">
+                  <a href="#" class="rooms-menu__link">Офіс</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+    </header>
+
+    <!-- main -->
+
+    <main class="page">
+      <div class="slider">
+        <img src="images/slide.webp" alt="ліжко з елементами які вказують на знижку" class="slider__img">
+      </div>
+      <!-- section-categories -->
+      <div class="section-categories">
+        <div class="section-categories__title title-sections">
+          <h2 class="title-sections__title">Популярні категорії</h2>
+        </div>
+
+        <div class="section-categories__blocks block-categories">
+          <div class="block-categories__card">
+            <a href="#" class="block-categories__link link-categories">
+              <div class="block-categories__wrapper-title">
+                <div class="block-categories__name">Ліжка</div>
+                <div class="block-categories__count">54</div>
+              </div>
+              <img src="images/categories/img_1.png" alt="двоспальне ліжко" class="block-categories__img">
+            </a>
+            <a href="#" class="block-categories__link-arrow">
+              <img src="images/categories/arrow.svg" alt="стрілка">
+            </a>
+          </div>
+
+          <div class="block-categories__card">
+            <a href="#" class="block-categories__link link-categories">
+              <div class="block-categories__wrapper-title">
+                <div class="block-categories__name">Матраци</div>
+                <div class="block-categories__count">30</div>
+              </div>
+              <img src="images/categories/img_2.png" alt="Матраци" class="block-categories__img">
+            </a>
+            <a href="#" class="block-categories__link-arrow">
+              <img src="images/categories/arrow.svg" alt="стрілка">
+            </a>
+          </div>
+
+          <div class="block-categories__card">
+            <a href="#" class="block-categories__link link-categories">
+              <div class="block-categories__wrapper-title">
+                <div class="block-categories__name">Мʼякі меблі</div>
+                <div class="block-categories__count">196</div>
+              </div>
+              <img src="images/categories/img_3.png" alt=">Мʼякі меблі" class="block-categories__img">
+            </a>
+            <a href="#" class="block-categories__link-arrow">
+              <img src="images/categories/arrow.svg" alt="стрілка">
+            </a>
+          </div>
+
+          <div class="block-categories__card">
+            <a href="#" class="block-categories__link link-categories">
+              <div class="block-categories__wrapper-title">
+                <div class="block-categories__name">Шафи</div>
+                <div class="block-categories__count">79</div>
+              </div>
+              <img src="images/categories/img_4.png" alt="Шафи" class="block-categories__img">
+            </a>
+            <a href="#" class="block-categories__link-arrow">
+              <img src="images/categories/arrow.svg" alt="стрілка">
+            </a>
+          </div>
+
+          <div class="block-categories__card">
+            <a href="#" class="block-categories__link link-categories">
+              <div class="block-categories__wrapper-title">
+                <div class="block-categories__name">Комоди</div>
+                <div class="block-categories__count">54</div>
+              </div>
+              <img src="images/categories/img_6.png" alt="Комоди" class="block-categories__img">
+            </a>
+            <a href="#" class="block-categories__link-arrow">
+              <img src="images/categories/arrow.svg" alt="стрілка">
+            </a>
+          </div>
+
+          <div class="block-categories__card">
+            <a href="#" class="block-categories__link link-categories">
+              <div class="block-categories__wrapper-title">
+                <div class="block-categories__name">Тумби</div>
+                <div class="block-categories__count">64</div>
+              </div>
+              <img src="images/categories/img_7.png" alt="Тумби" class="block-categories__img">
+            </a>
+            <a href="#" class="block-categories__link-arrow">
+              <img src="images/categories/arrow.svg" alt="стрілка">
+            </a>
+          </div>
+
+          <div class="block-categories__card">
+            <a href="#" class="block-categories__link link-categories">
+              <div class="block-categories__wrapper-title">
+                <div class="block-categories__name">Столи</div>
+                <div class="block-categories__count">35</div>
+              </div>
+              <img src="images/categories/img_8.png" alt="Столи" class="block-categories__img">
+            </a>
+            <a href="#" class="block-categories__link-arrow">
+              <img src="images/categories/arrow.svg" alt="стрілка">
+            </a>
+          </div>
+
+          <div class="block-categories__card">
+            <a href="#" class="block-categories__link link-categories">
+              <div class="block-categories__wrapper-title">
+                <div class="block-categories__name">Стільці</div>
+                <div class="block-categories__count">89</div>
+              </div>
+              <img src="images/categories/img_9.png" alt="Стільці" class="block-categories__img">
+            </a>
+            <a href="#" class="block-categories__link-arrow">
+              <img src="images/categories/arrow.svg" alt="стрілка">
+            </a>
+          </div>
+
+          <div class="block-categories__card">
+            <a href="#" class="block-categories__link link-categories">
+              <div class="block-categories__wrapper-title">
+                <div class="block-categories__name">Меблеві стінки</div>
+                <div class="block-categories__count">24</div>
+              </div>
+              <img src="images/categories/img_10.png" alt="Меблеві стінки" class="block-categories__img">
+            </a>
+            <a href="#" class="block-categories__link-arrow">
+              <img src="images/categories/arrow.svg" alt="стрілка">
+            </a>
+          </div>
+
+          <div class="block-categories__card">
+            <a href="#" class="block-categories__link link-categories">
+              <div class="block-categories__wrapper-title">
+                <div class="block-categories__name">Кухні</div>
+                <div class="block-categories__count">30</div>
+              </div>
+              <img src="images/categories/img_2.png" alt="Кухні" class="block-categories__img">
+            </a>
+            <a href="#" class="block-categories__link-arrow">
+              <img src="images/categories/arrow.svg" alt="стрілка">
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- section product -->
+      <div class="section-products">
+        <div class="section-products__title title-sections">
+          <h2 class="title-sections__title">Популярні категорії</h2>
+          <a href="#" class="title-sections__link">
+            <p class="title-sections__additional">Дивитись всі</p>
+          </a>
+        </div>
+
+        <div class="section-products__blocks block-products">
+          <a href="#" class="block-products__link-card">
+            <div class="block-products__card card-product">
+              <img src="images/product/img_1.png" alt="фото ліжка без матрасу з підйомним механізмом"
+                class="card-product__img">
+              <div class="card-product__block-description">
+                <p class="card-product__size">Розмір: 61 x 184 x 2130 мм</p>
+                <h3 class="card-product__title">
+                  Ліжко Спарта / Sparta з підйомним механізмом
+                </h3>
+                <div class="card-product__wrapper-section">
+                  <img src="images/product/icon/check.svg" alt="іконка наявності товару"
+                    class="card-product__icon-availability">
+                  <p class="card-product__text">В наявності</p>
+                </div>
+              </div>
+
+              <div class="card-product__buying buy-product">
+                <div class="buy-product__cost">
+                  <span class="buy-product__cost-sale">25 400 грн.</span>15 400 грн.
+                </div>
+
+                <div class="buy-product__wrapper-icons">
+                  <img src="images/product/icon/obrane.svg" alt="іконка обраного товару"
+                    class="buy-product__icon-favorite">
+                  <img src="images/product/icon/korzina.svg" alt="корзина товарів" class="buy-product__icon-basket">
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="block-products__link-card">
+            <div class="block-products__card card-product">
+              <img src="images/product/img_2.png" alt="фото ліжка без матрасу з підйомним механізмом"
+                class="card-product__img">
+              <div class="card-product__block-description">
+                <p class="card-product__size">Розмір: 61 x 184 x 2130 мм</p>
+                <h3 class="card-product__title">
+                  Ліжко Спарта / Sparta з підйомним механізмом
+                </h3>
+                <div class="card-product__wrapper-section">
+                  <img src="images/product/icon/check.svg" alt="іконка наявності товару"
+                    class="card-product__icon-availability">
+                  <p class="card-product__text">В наявності</p>
+                </div>
+              </div>
+
+              <div class="card-product__buying buy-product">
+                <div class="buy-product__cost">15 400 грн.</div>
+
+                <div class="buy-product__wrapper-icons">
+                  <img src="images/product/icon/obrane.svg" alt="іконка обраного товару"
+                    class="buy-product__icon-favorite">
+                  <img src="images/product/icon/korzina.svg" alt="корзина товарів" class="buy-product__icon-basket">
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="block-products__link-card">
+            <div class="block-products__card card-product">
+              <img src="images/product/img_2.png" alt="фото ліжка без матрасу з підйомним механізмом"
+                class="card-product__img">
+              <div class="card-product__block-description">
+                <p class="card-product__size">Розмір: 61 x 184 x 2130 мм</p>
+                <h3 class="card-product__title">
+                  Ліжко Аргон з підйомним механізмом
+                </h3>
+              </div>
+              <div class="card-product__wrapper-section">
+                <img src="images/product/icon/check.svg" alt="іконка наявності товару"
+                  class="card-product__icon-availability">
+                <p class="card-product__text">В наявності</p>
+              </div>
+
+              <div class="card-product__buying buy-product">
+                <div class="buy-product__cost">16 400 грн.</div>
+
+                <div class="buy-product__wrapper-icons">
+                  <img src="images/product/icon/obrane.svg" alt="іконка обраного товару"
+                    class="buy-product__icon-favorite">
+                  <img src="images/product/icon/korzina.svg" alt="корзина товарів" class="buy-product__icon-basket">
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="block-products__link-card">
+            <div class="block-products__card card-product">
+              <img src="images/product/img_3.png" alt="фото ліжка без матрасу з підйомним механізмом"
+                class="card-product__img">
+              <div class="card-product__block-description">
+                <p class="card-product__size">Розмір: 61 x 184 x 2130 мм</p>
+                <h3 class="card-product__title">
+                  Ліжко Престиж з підйомним механізмом
+                </h3>
+                <div class="card-product__wrapper-section">
+                  <img src="images/product/icon/check.svg" alt="іконка наявності товару"
+                    class="card-product__icon-availability">
+                  <p class="card-product__text">В наявності</p>
+                </div>
+              </div>
+
+              <div class="card-product__buying buy-product">
+                <div class="buy-product__cost">15 499 грн.</div>
+
+                <div class="buy-product__wrapper-icons">
+                  <img src="images/product/icon/obrane.svg" alt="іконка обраного товару"
+                    class="buy-product__icon-favorite">
+                  <img src="images/product/icon/korzina.svg" alt="корзина товарів" class="buy-product__icon-basket">
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="block-products__link-card">
+            <div class="block-products__card card-product">
+              <img src="images/product/img_4.png" alt="фото дивану" class="card-product__img">
+              <div class="card-product__block-description">
+                <p class="card-product__size">Розмір: 61 x 184 x 2130 мм</p>
+                <h3 class="card-product__title">
+                  Диван Токіо-2
+                </h3>
+                <div class="card-product__wrapper-section">
+                  <img src="images/product/icon/check.svg" alt="іконка наявності товару"
+                    class="card-product__icon-availability">
+                  <p class="card-product__text">В наявності</p>
+                </div>
+              </div>
+
+              <div class="card-product__buying buy-product">
+                <div class="buy-product__cost">13 211 грн.</div>
+
+                <div class="buy-product__wrapper-icons">
+                  <img src="images/product/icon/obrane.svg" alt="іконка обраного товару"
+                    class="buy-product__icon-favorite">
+                  <img src="images/product/icon/korzina.svg" alt="корзина товарів" class="buy-product__icon-basket">
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="block-products__link-card">
+            <div class="block-products__card card-product">
+              <img src="images/product/img_5.png" alt="фото матрасу" class="card-product__img">
+              <div class="card-product__block-description">
+                <p class="card-product__size">Розмір: 61 x 184 x 2130 мм</p>
+                <h3 class="card-product__title">
+                  Матрац Largo SLIM / Ларго Слім
+                </h3>
+                <div class="card-product__wrapper-section">
+                  <img src="images/product/icon/check.svg" alt="іконка наявності товару"
+                    class="card-product__icon-availability">
+                  <p class="card-product__text">В наявності</p>
+                </div>
+              </div>
+
+              <div class="card-product__buying buy-product">
+                <div class="buy-product__cost">2 810 грн.</div>
+
+                <div class="buy-product__wrapper-icons">
+                  <img src="images/product/icon/obrane.svg" alt="іконка обраного товару"
+                    class="buy-product__icon-favorite">
+                  <img src="images/product/icon/korzina.svg" alt="корзина товарів" class="buy-product__icon-basket">
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="block-products__link-card">
+            <div class="block-products__card card-product">
+              <img src="images/product/img_6.png" alt="фото матрасу" class="card-product__img">
+              <div class="card-product__block-description">
+                <p class="card-product__size">Розмір: 61 x 184 x 2130 мм</p>
+                <h3 class="card-product__title">
+                  Матрац ARGENTUM AMALTEA / Аргентум Амалті
+                </h3>
+                <div class="card-product__wrapper-section">
+                  <img src="images/product/icon/check.svg" alt="іконка наявності товару"
+                    class="card-product__icon-availability">
+                  <p class="card-product__text">В наявності</p>
+                </div>
+              </div>
+
+              <div class="card-product__buying buy-product">
+                <div class="buy-product__cost">15 400 грн.</div>
+
+                <div class="buy-product__wrapper-icons">
+                  <img src="images/product/icon/obrane.svg" alt="іконка обраного товару"
+                    class="buy-product__icon-favorite">
+                  <img src="images/product/icon/korzina.svg" alt="корзина товарів" class="buy-product__icon-basket">
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="block-products__link-card">
+            <div class="block-products__card card-product">
+              <img src="images/product/img_7.png" alt="фото дивану з підйомним механізмом" class="card-product__img">
+              <div class="card-product__block-description">
+                <p class="card-product__size">Розмір: 61 x 184 x 2130 мм</p>
+                <h3 class="card-product__title">
+                  Диван Браво
+                </h3>
+                <div class="card-product__wrapper-section">
+                  <img src="images/product/icon/check.svg" alt="іконка наявності товару"
+                    class="card-product__icon-availability">
+                  <p class="card-product__text">В наявності</p>
+                </div>
+              </div>
+
+              <div class="card-product__buying buy-product">
+                <div class="buy-product__cost">10 008 грн.
+                </div>
+
+                <div class="buy-product__wrapper-icons">
+                  <img src="images/product/icon/obrane.svg" alt="іконка обраного товару"
+                    class="buy-product__icon-favorite">
+                  <img src="images/product/icon/korzina.svg" alt="корзина товарів" class="buy-product__icon-basket">
+                </div>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="block-products__link-card">
+            <div class="block-products__card card-product">
+              <img src="images/product/img_8.png" alt="фото ліжка з підйомним механізмом" class="card-product__img">
+              <div class="card-product__block-description">
+                <p class="card-product__size">Розмір: 61 x 184 x 2130 мм</p>
+                <h3 class="card-product__title">
+                  Ліжко МК-5
+                </h3>
+                <div class="card-product__wrapper-section">
+                  <img src="images/product/icon/check.svg" alt="іконка наявності товару"
+                    class="card-product__icon-availability">
+                  <p class="card-product__text">В наявності</p>
+                </div>
+              </div>
+
+              <div class="card-product__buying buy-product">
+                <div class="buy-product__cost">8 775 грн.</div>
+
+                <div class="buy-product__wrapper-icons">
+                  <img src="images/product/icon/obrane.svg" alt="іконка обраного товару"
+                    class="buy-product__icon-favorite">
+                  <img src="images/product/icon/korzina.svg" alt="корзина товарів" class="buy-product__icon-basket">
+                </div>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- working-out -->
+      <div class="working-out">
+        <div class="wrap">
+          <div class="flex-wrap">
+            <div class="flex-wrap__item">flex: wrap;</div>
+            <div class="flex-wrap__item">flex: wrap;</div>
+            <div class="flex-wrap__item">flex: wrap;</div>
+            <div class="flex-wrap__item">flex: wrap;</div>
+            <div class="flex-wrap__item">flex: wrap;</div>
+            <div class="flex-wrap__item">flex: wrap;</div>
+          </div>
+
+          <div class="flex-nowrap">
+            <div class="flex-nowrap__item">flex: nowrap;</div>
+            <div class="flex-nowrap__item">flex: nowrap;</div>
+            <div class="flex-nowrap__item">flex: nowrap;</div>
+            <div class="flex-nowrap__item">flex: nowrap;</div>
+            <div class="flex-nowrap__item">flex: nowrap;</div>
+            <div class="flex-nowrap__item">flex: nowrap;</div>
+          </div>
+
+          <div class="flex-wrap-reverse">
+            <div class="flex-wrap-reverse__item">1</div>
+            <div class="flex-wrap-reverse__item">2</div>
+            <div class="flex-wrap-reverse__item">3;</div>
+            <div class="flex-wrap-reverse__item">4</div>
+            <div class="flex-wrap-reverse__item">flex: wrap-reverse;</div>
+          </div>
+        </div>
+
+        <div class="wrap-js">
+          <div class="jc-start">
+            <div class="jc-start__start">justify-content: flex-start;</div>
+            <div class="jc-start__start">justify-content: flex-start;</div>
+            <div class="jc-start__start">justify-content: flex-start;</div>
+          </div>
+
+          <div class="jc-center">
+            <div class="jc-center__center">justify-content: center;</div>
+            <div class="jc-center__center">justify-content: center;</div>
+            <div class="jc-center__center">justify-content: center;</div>
+          </div>
+
+          <div class="jc-end">
+            <div class="jc-end__end">justify-content: flex-end;</div>
+            <div class="jc-end__end">justify-content: flex-end;</div>
+            <div class="jc-end__end">justify-content: flex-end;</div>
+          </div>
+
+          <div class="jc-sb">
+            <div class="jc-sb__space-between">
+              justify-content: space-between;
+            </div>
+            <div class="jc-sb__space-between">
+              justify-content: space-between;
+            </div>
+            <div class="jc-sb__space-between">
+              justify-content: space-between;
+            </div>
+          </div>
+
+          <div class="jc-around">
+            <div class="jc-around__space-around">
+              justify-content: space-around;
+            </div>
+            <div class="jc-around__space-around">
+              justify-content: space-around;
+            </div>
+            <div class="jc-around__space-around">
+              justify-content: space-around;
+            </div>
+          </div>
+
+          <div class="jc-evently">
+            <div class="jc-evently__space-evently">
+              justify-content: space-evently;
+            </div>
+            <div class="jc-evently__space-evently">
+              justify-content: space-evently;
+            </div>
+            <div class="jc-evently__space-evently">
+              justify-content: space-evently;
+            </div>
+          </div>
+        </div>
+
+        <div class="align-items">
+          <h2 class="align-items__title">align-items</h2>
+          <div class="align-items__border">
+            <div class="align-items-wrapper-start">
+              <div class="align-items__start">start</div>
+            </div>
+
+            <div class="align-items-wrapper-end">
+              <div class="align-items__end">end</div>
+            </div>
+
+            <div class="align-items-wrapper-center">
+              <div class="align-items__center">end</div>
+            </div>
+
+            <div class="align-items-wrapper-stretch">
+              <div class="align-items__stretch">stretch</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-direction">
+          <h2 class="flex-direction__title">flex-direction</h2>
+
+          <div class="flex-direction__row-reverse row-reverse">
+            <div class="row-reverse__rw">row-reverse</div>
+            <div class="row-reverse__rw">row-reverse</div>
+            <div class="row-reverse__rw">row-reverse</div>
+          </div>
+
+          <div class="flex-direction__row row">
+            <div class="row__row">row</div>
+            <div class="row__row">row</div>
+            <div class="row__row">row</div>
+          </div>
+
+          <div class="flex-direction__column column">
+            <div class="column__column">column</div>
+            <div class="column__column">column</div>
+            <div class="column__column">column</div>
+          </div>
+
+          <div class="flex-direction__column-reverse column-reverse">
+            <div class="column-reverse__cr">column</div>
+            <div class="column-reverse__cr">2</div>
+            <div class="column-reverse__cr">3</div>
+          </div>
+        </div>
+
+        <div class="gap">
+          <h2 class="gap__title">gap</h2>
+          <div class="gap__block">
+            <div class="gap__item">gap: 20px;</div>
+            <div class="gap__item">gap: 20px;</div>
+            <div class="gap__item">gap: 20px;</div>
+            <div class="gap__item">gap: 20px;</div>
+            <div class="gap__item">gap: 20px;</div>
+            <div class="gap__item">gap: 20px;</div>
+            <div class="gap__item">gap: 20px;</div>
+            <div class="gap__item">gap: 20px;</div>
+            <div class="gap__item">gap: 20px;</div>
+            <div class="gap__item">gap: 20px;</div>
+          </div>
+
+          <div class="gap__different">
+            <div class="gap__item-1">
+              column-gap: 15px;<br>row-gap: 30px
+            </div>
+            <div class="gap__item-1">
+              column-gap: 15px;<br>row-gap: 30px
+            </div>
+            <div class="gap__item-1">
+              column-gap: 15px;<br>row-gap: 30px
+            </div>
+            <div class="gap__item-1">
+              column-gap: 15px;<br>row-gap: 30px
+            </div>
+            <div class="gap__item-1">
+              column-gap: 15px;<br>row-gap: 30px
+            </div>
+            <div class="gap__item-1">
+              column-gap: 15px;<br>row-gap: 30px
+            </div>
+            <div class="gap__item-1">
+              column-gap: 15px;<br>row-gap: 30px
+            </div>
+            <div class="gap__item-1">
+              column-gap: 15px;<br>row-gap: 30px
+            </div>
+            <div class="gap__item-1">
+              column-gap: 15px;<br>row-gap: 30px
+            </div>
+            <div class="gap__item-1">
+              column-gap: 15px;<br>row-gap: 30px
+            </div>
+          </div>
+        </div>
+
+        <div class="align-self">
+          <h2 class="align-self__title">align-self</h2>
+          <div class="align-self__block">
+            <div class="align-self__item">1</div>
+            <div class="align-self__item">2</div>
+            <div class="align-self__item">3</div>
+            <div class="align-self__item">4</div>
+          </div>
+        </div>
+
+        <div class="flex-grow">
+          <h2 class="flex-grow__title">flex-grow</h2>
+          <div class="flex-grow__block">
+            <div class="flex-grow__item">1</div>
+            <div class="flex-grow__item">2</div>
+            <div class="flex-grow__item">3</div>
+            <div class="flex-grow__item">4</div>
+          </div>
+        </div>
+
+        <div class="flex-grow-basis">
+          <h2 class="flex-grow-basis__title">
+            flex-grow + flex-basis +flex-shrink (gap: 20px)
+          </h2>
+          <div class="flex-grow-basis__block">
+            <div class="flex-grow-basis__item">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit
+            </div>
+            <div class="flex-grow-basis__item">2</div>
+            <div class="flex-grow-basis__item">3</div>
+            <div class="flex-grow-basis__item">4</div>
+          </div>
+        </div>
+
+        <div class="flex-grow-basis-2">
+          <h2 class="flex-grow-basis-2__title">change of orders</h2>
+          <div class="flex-grow-basis-2__block">
+            <div class="flex-grow-basis-2__item">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit
+            </div>
+            <div class="flex-grow-basis-2__item">2</div>
+            <div class="flex-grow-basis-2__item">3</div>
+            <div class="flex-grow-basis-2__item">4</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <span>©KROVATO - Технології сну - 2022. Всі права захищені.</span>
+    </footer>
+  </div>
+
+  <script>
+    function callMe() {
+      let phoneNumber = prompt("Будь ласка, введіть свій номер телефону:", "");
+      if (phoneNumber != null && phoneNumber != "") {
+        alert("Ми зв'яжемося з вами найближчим часом. Ваш номер: " +380679294545);
+      }
+    }
+  </script>
+</body>
+
+</html>
