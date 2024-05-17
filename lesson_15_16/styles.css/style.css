@@ -203,7 +203,7 @@
 .body-header__catalog {
   display: flex;
   align-items: center;
-  flex-shrink: 0 0 145px;
+  flex: 0 0 145px;
   background-color: #ffbc57;
   padding: 11px 20px;
   border-radius: 8px;
@@ -384,19 +384,7 @@
 .phones-contacts-header__item.language-top-header__item:not(:last-child) {
   margin-bottom: 10px;
 }
-.phones-contacts-header__item span {
-  font-size: 19px;
-  font-weight: 600;
-  text-align: left;
-  color: #2b2929;
-}
-@media (any-hover: hover) {
-  .phones-contacts-header__item:hover span {
-    color: #ffbc57;
-    transform: scale(1.05);
-    transition: all 0.5s;
-  }
-}
+
 .phones-contacts-header__link {
   font-size: 20px;
   font-weight: 600;
