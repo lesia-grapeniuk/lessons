@@ -1,4 +1,4 @@
-@import url("fonts.css");
+@import url("http://fonts.css");
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
@@ -378,11 +378,10 @@
   display: flex;
   flex-shrink: 0;
   border-radius: 8px;
-  background: url(<path-to-image>) #f8f8f8 50% / cover no-repeat;
+  overflow: hidden;
 }
 .slider__img {
   width: 100%;
-  overflow: hidden;
 }
 .section-categories__title {
   margin-bottom: 40px;
