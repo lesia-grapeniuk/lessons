@@ -13,7 +13,8 @@
   display: inline-block;
 }
 
-a {
+a,
+label {
   text-decoration: none;
   color: inherit;
   display: inline-block;

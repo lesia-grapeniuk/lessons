@@ -43,13 +43,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10px;
+  padding: 15px 5px;
 }
 .top-header__container-menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 0;
   flex-wrap: wrap;
 }
 .menu-container {
@@ -58,21 +57,20 @@
   display: flex;
   justify-content: space-between;
   gap: 30px;
+}
+.menu-container__link {
   color: #535353;
   font-family: "Proxima Nova";
   font-size: 16px;
   font-weight: 400;
   line-height: 1.86;
-  transition: transform 0.3s;
+  transition: all 0.5s;
 }
-
-.menu-container__list li:hover {
+.menu-container__link:hover {
   color: #ffbc57;
+  text-decoration: underline;
   transform: scale(1.05);
-  transition: transform 0.3s;
-}
-.menu-container__link {
-  transition: 0.1s;
+  transition: all 0.3s;
 }
 .top-header__container-help {
 }
@@ -80,7 +78,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
   overflow: clip;
 }
 .help-container__wrapper {
@@ -325,7 +322,7 @@
 }
 .items-discounts__item--sale::before {
   content: "";
-  background-image: url("/images/categories/icons/sale.svg");
+  background-image: url("../images/categories/icons/sale.svg");
   background-repeat: no-repeat;
   width: 24px;
   height: 24px;
@@ -400,7 +397,6 @@
 .section-categories__blocks {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
   row-gap: 24px;
   column-gap: 10px;
@@ -408,7 +404,7 @@
 }
 .block-categories {
 }
-.block-categories__card {
+.block-categories__cards {
   position: relative;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   flex-basis: 250px;
@@ -416,14 +412,14 @@
   overflow: clip;
   transition: 0.4s;
 }
-.block-categories__card:hover {
+.block-categories__cards:hover {
   transform: scale(1.02);
   transition: 0.5s;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
-.block-categories__link {
+.block-categories__card {
   box-sizing: border-box;
   flex-basis: 250px;
   flex-shrink: 0;
@@ -522,7 +518,6 @@
 }
 .section-products__blocks {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   gap: 30px;
   flex-wrap: wrap;
@@ -533,11 +528,10 @@
 .block-products__card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: start;
   row-gap: 20px;
 }
-.block-products__link-card {
+.block-products__block-card {
   padding: 20px;
   border-radius: 8px;
   border: 1px solid #e3e2e2;
