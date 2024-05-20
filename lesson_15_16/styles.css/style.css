@@ -203,14 +203,14 @@
 }
 .body-header__catalog {
   display: flex;
+  justify-content: center;
+  text-align: center;
   align-items: center;
   flex: 0 0 145px;
   background-color: #ffbc57;
   padding: 11px 20px;
   border-radius: 8px;
   min-height: 50px;
-  display: inline-flex;
-  align-items: center;
   transition: 0.3s;
   z-index: 2;
   position: relative;
@@ -221,7 +221,6 @@
     transition: 0.5s;
   }
 }
-
 .body-header__catalog span {
   font-size: 19px;
   font-weight: 600;
@@ -247,7 +246,6 @@
 }
 .body-header__search {
   z-index: 2;
-  /* flex: 1 1 420px; */
   position: relative;
   transition: all 0.3s;
 }
@@ -762,6 +760,9 @@
     right: 0;
     height: 40px;
     width: 40px;
+  }
+  .body-header__catalog {
+    display: none;
   }
 }
 @media (max-width: 505px) {
