@@ -95,6 +95,10 @@
   gap: 10px;
   flex-wrap: wrap;
 }
+.social-top-header__list img {
+  width: 100%;
+  object-fit: cover;
+}
 .social-top-header__item {
 }
 .social-top-header__link {
@@ -404,6 +408,10 @@
   display: flex;
   column-gap: 20px;
   row-gap: 5px;
+}
+.body-header__actions-link img {
+  width: 100%;
+  object-fit: cover;
 }
 .body-header__actions-link--favorite {
   border-radius: 50%;
