@@ -136,6 +136,7 @@
 /* #region main-header */
 .header__main {
   width: 100%;
+  
   border-bottom: 2px solid #f8f8f8;
 }
 .main-header__container {
@@ -148,6 +149,7 @@
   overflow: clip;
 }
 .main-header__container--margin-top {
+  margin: 0 auto;
   margin-top: 55px;
   width: 1290px;
 }
