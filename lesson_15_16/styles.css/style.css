@@ -61,6 +61,7 @@
   row-gap: 10px;
 }
 .menu-top-header__item {
+  text-align: center;
 }
 .menu-top-header__link {
   transition: 0.3s;
@@ -469,6 +470,7 @@
 }
 .sections-menu__list {
   display: flex;
+  align-items: center;
   max-width: 475px;
   flex-wrap: wrap;
   flex-shrink: 0;
@@ -476,6 +478,7 @@
   row-gap: 5px;
 }
 .sections-menu__item {
+  text-align: center;
 }
 .sections-menu__link {
   font-size: 19px;
@@ -515,6 +518,7 @@
   row-gap: 5px;
 }
 .rooms-menu__item {
+  text-align: center;
 }
 .rooms-menu__link {
   font-size: 19px;
@@ -805,6 +809,7 @@
   width: 100%;
   display: flex;
   text-align: center;
+  flex-wrap: wrap;
   background-color: #2b2929;
 }
 .footer span {
@@ -815,6 +820,6 @@
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
-  line-height: 4.2;
+  line-height: 2.2;
 }
 /* #endregion footer */
