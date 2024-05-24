@@ -796,6 +796,16 @@
     height: 40px;
     width: 40px;
   }
+  .contacts-body-header__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  flex: 0 0 40px;
+  height: 40px;
+  width: 40px;
+}
   .body-header__catalog {
     display: none;
   }
