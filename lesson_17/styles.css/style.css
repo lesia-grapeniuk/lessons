@@ -1025,7 +1025,7 @@
   background-color: #d6dce5;
 }
 .style {
-  padding-bottom: 70px;
+  padding: 0 64px 70px;
   display: flex;
   flex: 1 1 1270px;
   flex-direction: column;
@@ -1048,7 +1048,7 @@
   width: 100%;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(5, minmax(232px, 1fr));
+  grid-template-columns: repeat(5, minmax(208px, 1fr));
   gap: 20px;
   grid-auto-rows: 289px;
 }
