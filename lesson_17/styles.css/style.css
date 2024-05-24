@@ -310,10 +310,10 @@
   align-items: center;
   background-color: #f8f8f8;
   border-radius: 50%;
-  flex: 0 0 50px;
-  height: 50px;
-  width: 50px;
-  gap: 50px;
+  flex: 0 0 40px;
+  height: 40px;
+  width: 40px;
+  gap: 40px;
   transition: 0.3s;
 }
 .contacts-body-header__icon img {
@@ -802,9 +802,9 @@
   align-items: center;
   background-color: #f8f8f8;
   border-radius: 50%;
-  flex: 0 0 40px;
-  height: 40px;
-  width: 40px;
+  flex: 0 0 35px;
+  height: 35px;
+  width: 35px;
 }
   .body-header__catalog {
     display: none;
@@ -1097,7 +1097,7 @@
     transition: all 0.5s ease;
   }
 }
-.style__item span {
+.style__item h3 {
   position: absolute;
   top: 10%;
   left: 5%;
