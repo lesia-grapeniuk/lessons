@@ -56,6 +56,10 @@
   text-transform: capitalize;
 }
 .output-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
   font-size: 19px;
   line-height: 1.2;
   margin: 0 auto;
@@ -65,11 +69,28 @@
   border: 1px solid #000;
   overflow: auto;
   white-space: pre-wrap;
-  padding: 20px;
+  padding: 30px;
   box-sizing: border-box;
   background-color: #fff;
+  color: #fff;
 }
-
+.output-container__task {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  background-color: #040303;
+  border-radius: 20px;
+}
+.output-container__task span {
+  display: flex;
+  justify-content: flex-start;
+ 
+}
+.output-container__answer {
+  margin-top: 20px;
+}
 .footer {
   width: 100%;
   color: black;

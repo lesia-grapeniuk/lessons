@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,39 @@
   <link rel="stylesheet" href="styles.css/style.css">
   <title>Lesson 21</title>
 </head>
+
 <body>
   <div class="wrapper">
-    <header class="header">Найкращий курс з побудови вебінтерфейсів у цілому всесвіті !</header>
+    <header class="header">Найкращий курс з побудови WEB-ІНТЕРФЕЙСІВ у цілому всесвіті !</header>
     <main class="page">
-      <h1 class="title">Привіт Java Script !!! ДЗ №1</h1> 
-      <div class="output-container" id="output"></div>
+      <h1 class="title">Привіт Java Script !!! ДЗ №1</h1>
+      <div class="output-container">
+        <div class="output-container__task">Задача №1
+          <span>Яка назва змінної вірна?</span>
+          <span>1. let user-name;</span>
+          <span>2. let UserName;</span>
+          <span>3. let userName;</span>
+          <div class="output-container__answer">Правильна відповідь №3. Застосовується стиль - lowerCamelCase</div>
+        </div>
+        <div class="output-container__task">Задача №2
+          <span>Чи буде помилка при виконанні наступної програми?</span>
+          <span>const userName = 20;</span>
+          <span>userName = "Іштван";</span>
+          <div class="output-container__answer">Відповідь: так, буде помилкою. Адже змінна const - є константою, тобто її значення не можна змінити після ініціалізації, і врезультаті виконання даної програми ми отримаємо помилку!</div>
+        </div>
+        <div class="output-container__task">Задача №3
+          <span>Що потрапить в консоль?</span>
+          <span>let numOne = 20;</span>
+          <span>let numTwo = "20";</span>
+          <span>let numSumm = numOne + numTwo;</span>
+          <span>console.log(numSumm);</span>
+          <div class="output-container__answer">В результаті ми отримаємо рядок '2020' (при додаванні рядка з числом відбувається конкатенація, тобто склеювання рядка з числом. I вуаля... число вже не число:). Можна переконатися, відкривши DevTools та перейти на вкладку 'console'.</div>
+        </div>
+      </div>
     </main>
     <footer class="footer">Далі буде! Бажаю всім успіхів у навчанні !</footer>
   </div>
   <script src="script.js"></script>
 </body>
+
 </html>
