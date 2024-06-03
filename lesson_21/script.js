@@ -10,9 +10,10 @@
 // Чи буде помилка при виконанні наступної програми
 // const userName = 20
 // userName = "Іштван"
+// console.log(userName);
+// TypeError: Assignment to constant variable.
 
 // буде помилкою, адже змінна const - є константою, тобто її значення не можна змінити після ініціалізації, і врезультаті ми отриаємо помилку!
-
 
 // Задача №3
 // Що потрапить в консоль?
@@ -23,12 +24,14 @@
 // console.log(numSumm)
 
 let numOne = 20;
-let numTwo = '20';
+let numTwo = "20";
 let numSumm = numOne + numTwo;
 
 console.log(numOne);
 console.log(numTwo);
 console.log(`${typeof numOne} + ${numTwo} = ${typeof numSumm}`);
-console.log(`в результаті отриваємо рядок '${numSumm}' про що свідчить текст білого кольору :)`);
+console.log(
+  `в результаті отриваємо рядок '${numSumm}' про що свідчить текст білого кольору :)`
+);
 
 // в результаті ми отримаємо рядок 2020 (при додаванні рядка з числом відбувається конкатенація)
