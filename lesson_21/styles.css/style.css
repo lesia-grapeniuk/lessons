@@ -24,7 +24,6 @@
   color: black;
   background-color: #415ff7;
   padding: 20px;
-  font-family: "Cactus", sans-serif;
   text-transform: capitalize;
   font-weight: 600;
   letter-spacing: 2px;
@@ -49,7 +48,6 @@
   font-weight: 600;
   letter-spacing: 2px;
   font-size: 38px;
-  font-family: "Cactus", sans-serif;
 }
 
 .title {
@@ -101,7 +99,6 @@
   color: black;
   background-color: #415ff7;
   padding: 20px;
-  font-family: "Cactus", sans-serif;
   text-transform: capitalize;
   font-weight: 600;
   letter-spacing: 2px;
