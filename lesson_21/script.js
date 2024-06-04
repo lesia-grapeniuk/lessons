@@ -30,7 +30,10 @@ let numSumm = numOne + numTwo;
 console.log(numOne);
 console.log(numTwo);
 console.log(`${typeof numOne} + ${numTwo} = ${typeof numSumm}`);
-console.log(`в результаті отриваємо рядок '${numSumm}' про що свідчить текст білого кольору :)`
+console.log(`
+let result = '20' + 20;
+console.log(result); // Виведе '2020'
+додавши обидва операнди в результаті отриваємо рядок '${numSumm}' про що свідчить текст білого кольору :)`
 );
 
 // в результаті ми отримаємо рядок 2020 (при додаванні рядка з числом відбувається конкатенація)
