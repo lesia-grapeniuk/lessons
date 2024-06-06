@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css/style.css">
+  <link rel="icon" href="img/logo-js.svg" type="image/svg">
+  <title>Lesson 22</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">Найкращий курс з побудови WEB-ІНТЕРФЕЙСІВ у цілому всесвіті !</header>
+    <main class="page">
+      <h1 class="title">Привіт Java Script !!! ДЗ №2</h1>
+      <div class="output-container">
+        <div class="output-container__task">Задача №1
+          <span>Що потрапить в консоль?</span>
+          <div class="output-container__black-block line">
+          <div class="line__black">
+          <span class="blue">  let</span>
+            <span class="white">someVar</span>
+            <span class="coral">=</span>
+            <span class="purple">0</span>
+            <span class="white">;</span>
+        </div>
+          <div class="line__black">
+            <span class="coral">  ++</span>
+            <span class="white">someVar;</span>
+            <br>
+        </div>
+          <!-- <div class="line__black">
+            <span class="blue">console</span>
+            <span class="green">log</span>
+            <span class="yellow">(`Результат задачі №1`)</span>
+            <span class="white">;</span>
+        </div> -->
+      <div class="line__black">
+        <span class="coral">  if</span>
+        <span class="yellow">(</span>
+        <span class="white">(somevar)</span>
+        <span class="yellow">)</span>
+        <span class="yellow">{</span>
+    </div>
+    <div class="line__black">
+      <span class="blue">console</span>
+      <span class="green">log</span>
+      <span class="purple">(</span>
+      <span class="white">someVar</span>
+      <span class="purple">)</span>
+      <span class="white">;</span>
+      </div>
+      <div class="line__black">
+        <span class="yellow">}</span>
+      </div>
+      <div class="line__black">
+        <span class="white">// як результат в консолі отримаємо число '1'</span>
+      </div>
+          <div class="output-container__answer">Правильна відповідь: в консоль потрапить число "1". Застосувавши інкремент (подвійний плюс) перед змінною, відбувається збільшення змінної на одиницю. Це можна записати ще такими способами: <br><br> someVar += 1; <br> someVar = someVar + 1;
+          </div>
+        </div>
+        </div>
+        <div class="output-container__task">Задача №2
+          <span>За допомогою циклу FOR виведіть в консоль 10 рядків:</span>
+          <span>Пункт №1</span>
+          <span>Пункт №2...</span>
+          <div class="output-container__answer">for (let i = 1; i <= 10; i++) {<br>console.log(`Пункт №${i}`);<br>}<br>В консолі також можна глянути результат</div>
+          <div class="output-container__answer">Цикл 'for' в JavaScript використовується для багаторазового виконання блоку коду з певною кількістю повторень. Синтаксис вже відтворений чуть вище. Давайте розглянемо кожну частину цього синтаксису: <br> 1. Ініціалізація (Initialization): Цей вираз виконується один раз перед початком циклу. Зазвичай тут оголошується і задається початкове значення змінної-лічильника.
+            <div class="black-block-code code-descriptions">
+              <div class="code-descriptions__explenation">
+                <span class="blue">let</span>
+                <span class="white">i =</span>
+                <span class="coral">0</span>
+                <span class="white">;</span>
+              </div>
+            </div>2. Умова (Condition): Цей вираз перевіряється перед кожною ітерацією циклу. Якщо умова повертає 'true', виконується тіло циклу. Якщо 'false', цикл припиняється.
+            <div class="black-block-code code-descriptions">
+              <div class="code-descriptions__explenation">
+                <span class="white">i <</span>
+                <span class="coral">10</span>
+                <span class="white">;</span>
+              </div>
+          </div>3. Оновлення (Update): Цей вираз виконується після кожної ітерації циклу. Зазвичай тут змінюється значення змінної-лічильника. Наприклад:<div class="black-block-code code-descriptions">
+            <div class="code-descriptions__explenation">
+              <span class="white">i++;</span>
+            </div>
+        </div>Отже, Порядок виконання: <br> 1. Ініціалізація - виконується один раз перед початком циклу.<br>2. Умова - перевіряється перед кожною ітерацією.<br>3. Тіло циклу - виконується, якщо умова true.<br>4.Оновлення - виконується після тіла циклу.<br>5. Цей порядок повторюється, доки умова не стане false.<br>6. В консолі виводимо в зворотніх лапках (`інтерполяція`) текстове повідомлення, яке включає значення змінної 'i'.<br>7. console.log - це (як казав Женя, дебагер для бідних:)) функція, яка використовується для виводу інформації в консоль. Вона дозволяє розробникам виводити текстові повідомлення або значення змінних для діагностики та налагодження коду.<br>8. Пункт №${i} - це шаблонний рядок (template literal) в JavaScript. Шаблонні рядки створюються за допомогою зворотних апострофів (``) і дозволяють включати змінні та вирази всередину рядка.<br>9. 'Пункт №:' - це текстова частина рядка, яка буде виведена без змін.<br>10. '${i}' - це змінна або вираз JavaScript, значення якої буде вставлено на це місце в рядку. Наприклад, якщо i дорівнює 5, то ${i} буде замінено на 5.<br>11. Обчислення значення та виведення: коли цей рядок виконується, спочатку обчислюється значення змінної 'i', потім створюється новий рядок з підставленим значенням і цей рядок виводиться в консоль.
+        </div>
+        </div>
+        <div class="output-container__task">Задача №3
+          <span>Що потрапить в консоль?</span>
+          <span>if (2 * 20 <= 10 || 30 / 2 < 5 && 10 <= "10" || 20 === "20"){</span>
+          <span>console.log('000');</span>
+          <span>}</span>
+          <div class="output-container__answer">
+            <div class="output-container__main-headlines">Спочатку виконаються дії обчислення виразів всередині умовного оператора:
+          </div>
+            <span>1. 2 * 20 = 40.</span>
+            <span>40 ≤ 10 (це неправда - false).</span>
+            <span>2. 30 / 2 = 15.</span>
+            <span>15 < 5 (це не правда - false)</span>
+            <span>3. 10 ≤ "10" (оператор "<=" змушує JS привести обидва операнди до числа. Отже, "10" буде перетворено на 10).</span>
+            <span>10 ≤ 10 (це правда - true)</span>
+            <span>4. 20 === "20" (оператор строгого порівняння "===" перевіряє як значення, так і тип. Тут 20 є числом, а "20" є рядком, тому це неправда - false)</span>
+            <span>В результаті ми отримаємо:</span>
+            <span>false || false && true || false</span>
+            <div class="output-container__main-headlines">Наступний крок - обчислення логічних операторів</div>
+              <span>У даному виразі маємо два оператори ('or') "||" та один ('and') "&&"</span>
+              <span>"||"" - логічний оператор "або" (логічне "або" чи OR).</span>
+              <span>"&&" - логічний оператор "і" (логічне "і" або AND)</span>
+              <span>"&&" - має вищий пріорітет, тому обчислення починається з нього</span>
+              <span>Отже: 30 / 2 < 5 "&&" 10 ≤ "10"</span>
+              <span>неправда (false) && правда (true) = неправда.</span>
+              <span>Оператор "&&" знайшовши перше неправдиве значення зупиняє пошук</span>
+              <span>В результаті ми отримали:</span>
+              <span>false || false || false</span>
+              <div class="output-container__main-headlines">Висновок:</div>
+              <span>Маючи всі неправдиві значення 'false' в результаті ми всерівно отримаємо останнє значення 'false' з виразу, і в консолі ми нічого не отримаємо. Проте якщо змінити хоча б одну умову на 'true', - тоді ми б змогли вивести рядок з трьома нулями </span>
+              <span>Наприклад:</span>
+              <span>if (!(2 * 20 <= 10 || 30 / 2 < 5 && 10 <= "10" || 20 === "20")) {<br>console.log('000');<br>} // 000 typeof String;</span>
+              <span>if (2 * 20 <= 50 || 30 / 2 < 5 && 10 <= "10" || 20 === "20") {<br>console.log('000');<br>}<br>true || false && true || false<br>1. false && true = false<br>2. true || false = true<br>Знайшовши перше правдиве - пошук зупинено.<br>Результат в консолі - рядок з трьома нулями.</span>
+          </div>
+        </div>
+        <div class="output-container__task">Задача №4
+          <span>Створіть функцію, яка повертає результат ділення числа 'a' на число 'b' з додаванням рядка "Результат ділення:". Викличте функцію передаючі різні значення, у тому числі не передаючи зовсім. Функція не має повертати NaN, Infinite або помилку.
+          </span>
+          <div class="output-container__main-headlines">Для вирішення цієї задачі є декілька варіантів:</div>
+          <div class="output-container__answer">Перший найпростіший варіант: - оголосити функцію та присвоїти ій два аргументи. Наступний крок - в межах блочної видимості функції перевірити чи передані аргументи: 'if (a === undefined )', якщо ні - то присвоюємо першому аргументу '0' - другому '1',  якщо він 'undefined' та строго дорівнює нулю, щоб уникнути ділення на нуль. Створюємо константу 'result' та присвоюємо ій результат ділення 'a / b'. І за допомогою 'return' повертаємо повідомлення з результатом ділення. За межами функції викликаємо її передаючи різні значення (тобто поза її блоком видимості) щоб продемонструвати її роботу у різних сценаріях. Ось як це виглядатиме в JS:</div>
+          <div class="black-block-code code-descriptions">
+            <div class="code-descriptions__first">
+            <span class="blue">function</span>
+            <span class="green">divideWithMessage</span>
+            <span class="purple">(</span>
+            <span class="yellow">a, b</span>
+            <span class="purple">)</span>
+            <span class="yellow">{</span>
+          </div>
+          <div class="code-descriptions__fifth">
+            <span class="coral">  if</span>
+            <span class="purple">(</span>
+            <span class="white">a</span>
+            <span class="coral">===</span>
+            <span class="blue">undefined</span>
+            <span class="purple">)</span>
+            <span class="white">a</span>
+            <span class="coral">=</span>
+            <span class="purple">0</span>
+            <span class="white">;</span>
+          </div>
+          <div class="code-descriptions__fifth">
+            <span class="small-text">// Якщо після оператора if йде лише один оператор, фігурні дужки можна не використовувати. Це часто використовується для скорочення коду. Але, слід зауважити, що додавання фігурних дужок може підвищити читабельність коду, особливо якщо згодом буде додано більше операторів.</span>
+          </div>
+          <div class="code-descriptions__first">
+            <span class="coral">  if</span>
+            <span class="purple">(</span>
+            <span class="white">b</span>
+            <span class="coral">===</span>
+            <span class="blue">undefined</span>
+            <span class="coral">||</span>
+            <span class="white">b</span>
+            <span class="coral">===</span>
+            <span class="purple">0)</span>
+            <span class="white">b</span>
+            <span class="coral">=</span>
+            <span class="purple">1</span>
+            <span class="white">;</span>
+          </div>
+          <div class="code-descriptions__first">
+            <span class="blue">  const</span>
+            <span class="green">result</span>
+            <span class="coral">=</span>
+            <span class="white">a</span>
+            <span class="coral">/</span>
+            <span class="white">b</span>
+            <span class="white">;</span>
+          </div>
+          <div class="code-descriptions__sixth">
+            <span class="coral">  return</span>
+            <span class="yellow">`Результат ділення:</span>
+            <span class="purple">${</span>
+            <span class="white">result</span>
+            <span class="purple">}</span>
+            <span class="yellow">`</span>
+            <span class="white">;</span>
+          </div>
+          <div class="code-descriptions__seventh">
+            <span class="yellow">}</span>
+          </div>
+          <div class="code-descriptions__exemple">
+            <span class="small-text">// Приклади викликів функції.</span>
+          </div>
+          <div class="code-descriptions__call-function">
+            <span class="blue">console.</span>
+            <span class="green">log</span>
+            <span class="yellow">(</span>
+            <span class="green">divideWithMessage</span>
+            <span class="purple">(10, 2)</span>
+            <span class="yellow">)</span>
+            <span class="white">;</span>
+          </div>
+          <div class="code-descriptions__exemple">
+            <span class="small-text">// "Результат ділення: 5"</span>
+          </div>
+          <div class="code-descriptions__call-function">
+            <span class="blue">console.</span>
+            <span class="green">log</span>
+            <span class="yellow">(</span>
+            <span class="green">divideWithMessage</span>
+            <span class="purple">(10, 0)</span>
+            <span class="yellow">)</span>
+            <span class="white">;</span>
+          </div>
+          <div class="code-descriptions__exemple">
+            <span class="small-text">// "Результат ділення: 10" (ділення на 1 замість 0)</span>
+          </div>
+          <div class="code-descriptions__call-function">
+            <span class="blue">console.</span>
+            <span class="green">log</span>
+            <span class="yellow">(</span>
+            <span class="green">divideWithMessage</span>
+            <span class="purple">(10)</span>
+            <span class="yellow">)</span>
+            <span class="white">;</span>
+          </div>
+          <div class="code-descriptions__exemple">
+            <span class="small-text">// "Результат ділення: 10" (ділення на 1)</span>
+          </div>
+        <div class="code-descriptions__call-function">
+          <span class="blue">console.</span>
+          <span class="green">log</span>
+          <span class="yellow">(</span>
+          <span class="green">divideWithMessage</span>
+          <span class="purple">()</span>
+          <span class="yellow">)</span>
+          <span class="white">;</span>
+        </div>
+        <div class="code-descriptions__exemple">
+          <span class="small-text">// "Результат ділення: 0" (ділення 0 на 1)</span>
+        </div>
+        <div class="code-descriptions__call-function">
+          <span class="blue">console.</span>
+          <span class="green">log</span>
+          <span class="yellow">(</span>
+          <span class="green">divideWithMessage</span>
+          <span class="purple">(0, 5)</span>
+          <span class="yellow">)</span>
+          <span class="white">;</span>
+        </div>
+        <div class="code-descriptions__exemple">
+          <span class="small-text">// "Результат ділення: 0" (ділення 0 на 5)</span>
+        </div>
+        <div class="code-descriptions__call-function">
+          <span class="blue">console.</span>
+          <span class="green">log</span>
+          <span class="yellow">(</span>
+          <span class="green">divideWithMessage</span>
+          <span class="purple">(-10, 2)</span>
+          <span class="yellow">)</span>
+          <span class="white">;</span>
+        </div>
+        <div class="code-descriptions__exemple">
+          <span class="small-text">"Результат ділення: -5"</span>
+        </div>
+          </div>
+          <span>Варіант розвʼязку з використанням тернарного оператора для обробки значень за замовчуванням та ділення на нуль</span>
+          <div class="black-block-code code-descriptions">
+            <div class="code-descriptions__second">
+              <span class="blue">function</span>
+              <span class="green">divideWithMessage</span>
+              <span class="purple">(</span>
+              <span class="yellow">a, b</span>
+              <span class="purple">)</span>
+              <span class="yellow">{</span>
+            </div>
+            <div class="code-descriptions__second">
+              <span class="white">  a</span>
+              <span class="coral">=</span>
+              <span class="white">a</span>
+              <span class="coral">!==</span>
+              <span class="blue">undefined</span>
+              <span class="coral">?</span>
+              <span class="white">a</span>
+              <span class="coral">:</span>
+              <span class="purple">0</span>
+              <span class="white">;</span>
+            </div>
+            <div class="code-descriptions__second">
+              <span class="white">  b</span>
+              <span class="coral">=</span>
+              <span class="white">b</span>
+              <span class="coral">!==</span>
+              <span class="blue">undefined</span>
+              <span class="coral">?</span>
+              <span class="white">b</span>
+              <span class="coral">:</span>
+              <span class="purple">1</span>
+              <span class="white">;</span>
+            </div>
+            <div class="code-descriptions__exemple">
+              <span class="small-text">// Перевіряємо ділення на 0</span>
+            </div>
+            <div class="code-descriptions__second">
+              <span class="blue">  const</span>
+              <span class="green">result</span>
+              <span class="coral">=</span>
+              <span class="white">b</span>
+              <span class="coral">===</span>
+              <span class="purple">0</span>
+              <div class="code-descriptions__add-line"><span class="coral">    ?</span>
+                <span class="yellow small-text">'Помилка: ділення на нуль неможливе'</span>
+              </div>
+              <div class="code-descriptions__add-line">
+                <span class="coral">    :</span>
+                <span class="yellow small-text">`Результат ділення:</span>
+                <span class="purple small-text">${</span>
+                  <span class="white small-text">a</span>
+                  <span class="coral small-text">/</span>
+                  <span class="white small-text">b</span>
+                  <span class="purple small-text">}</span>
+                  <span class="yellow">`</span>
+                  <span class="white">;</span>
+              </div>
+              
+            </div>
+            <div class="code-descriptions__exemple">
+              <span class="small-text">// Повертаємо результат у вигляді рядка</span>
+            </div>
+            <div class="code-descriptions__second">
+              <span class="coral">  return</span>
+              <span class="white">result;</span>
+            </div>
+            <div class="code-descriptions__fifth">
+              <span class="yellow">}</span>
+            </div>
+            <div class="code-descriptions__exemple">
+              <span class="small-text">// Приклади викликів функції:</span>
+            </div>
+            <div class="code-descriptions__call-function">
+              <span class="blue">console.</span>
+              <span class="green">log</span>
+              <span class="yellow">(</span>
+              <span class="green">divideWithMessage</span>
+              <span class="purple">(8, 2)</span>
+              <span class="yellow">)</span>
+              <span class="white">;</span>
+            </div>
+            <div class="code-descriptions__exemple">
+              <span class="small-text">//"Результат ділення: 4"</span>
+            </div>
+            <div class="code-descriptions__call-function">
+              <span class="blue">console.</span>
+              <span class="green">log</span>
+              <span class="yellow">(</span>
+              <span class="green">divideWithMessage</span>
+              <span class="purple">(5, 0)</span>
+              <span class="yellow">)</span>
+              <span class="white">;</span>
+            </div>
+            <div class="code-descriptions__exemple">
+              <span class="small-text">// "Помилка: ділення на нуль неможливе"</span>
+            </div>
+            <div class="code-descriptions__call-function">
+              <span class="blue">console.</span>
+              <span class="green">log</span>
+              <span class="yellow">(</span>
+              <span class="green">divideWithMessage</span>
+              <span class="purple">(10)</span>
+              <span class="yellow">)</span>
+              <span class="white">;</span>
+            </div>
+            <div class="code-descriptions__exemple">
+              <span class="small-text">// "Результат ділення: 10" (ділення на 1)</span>
+            </div>
+            <div class="code-descriptions__call-function">
+              <span class="blue">console.</span>
+              <span class="green">log</span>
+              <span class="yellow">(</span>
+              <span class="green">divideWithMessage</span>
+              <span class="purple">()</span>
+              <span class="yellow">)</span>
+              <span class="white">;</span>
+            </div>
+            <div class="code-descriptions__exemple">
+              <span class="small-text">// "Результат ділення: 0" (ділення 0 на 1)</span>
+            </div>
+            <div class="code-descriptions__call-function">
+              <span class="blue">console.</span>
+              <span class="green">log</span>
+              <span class="yellow">(</span>
+              <span class="green">divideWithMessage</span>
+              <span class="purple">(0, 7)</span>
+              <span class="yellow">)</span>
+              <span class="white">;</span>
+            </div>
+            <div class="code-descriptions__exemple">
+              <span class="small-text">// "Результат ділення: 0" (ділення 0 на 5)</span>
+            </div>
+            <div class="code-descriptions__call-function">
+              <span class="blue">console.</span>
+              <span class="green">log</span>
+              <span class="yellow">(</span>
+              <span class="green">divideWithMessage</span>
+              <span class="purple">(-16, 2)</span>
+              <span class="yellow">)</span>
+              <span class="white">;</span>
+            </div>
+            <div class="code-descriptions__exemple">
+              <span class="small-text">// "Результат ділення: -8""</span>
+            </div>
+              </div>
+              <span>Ще один варіант розвязання задачі вразі передачі в аргументи рядок з літерами чи символами</span>
+              <div class="black-block-code code-descriptions">
+                <div class="code-descriptions__third">
+                  <span class="blue">function</span>
+                  <span class="green">divideWithMessage</span>
+                  <span class="yellow">(</span>
+                  <span class="white">a, b</span>
+                  <span class="yellow">)</span>
+                  <span class="yellow">{</span>
+                </div>
+                <div class="code-descriptions__third">
+                  <span class="blue">  function</span>
+                  <span class="green">parseNumber</span>
+                  <span class="purple">(</span>
+                  <span class="yellow">input</span>
+                  <span class="purple">)</span>
+                  <span class="purple">{</span>
+                </div>
+                <div class="code-descriptions__third">
+                  <span class="coral">    if</span>
+                  <span class="blue">(</span>
+                  <span class="coral">typeof</span>
+                  <span class="white">input</span>
+                  <span class="coral">===</span>
+                  <span class="yellow">'string'</span>
+                  <span class="blue">)</span>
+                  <span class="blue">{</span>
+                </div>
+                <div class="code-descriptions__exemple">
+                  <span class="small-text">        // Відкидаємо всі символи, крім цифр і крапки</span>
+                </div>
+                <div class="code-descriptions__third">
+                  <span class="white">      input</span>
+                  <span class="coral">=</span>
+                  <span class="blue">input</span>
+                  <span class="white--without-r-padding">.</span>
+                  <span class="green">replace</span>
+                  <span class="yellow">(/</span>
+                  <span class="blue">[</span>
+                  <span class="coral">^</span>
+                  <span class="blue">0-9.]</span>
+                  <span class="yellow">/</span>
+                  <span class="coral">g</span>
+                  <span class="white">,</span>
+                  <span class="yellow">'')</span>
+                  <span class="white">;</span>
+                </div>
+                <div class="code-descriptions__third">
+                  <span class="blue">    }</span>
+                </div>
+                <div class="code-descriptions__third">
+                  <span class="coral">      return</span>
+                  <span class="green">parseFloat</span>
+                  <span class="blue">(</span>
+                  <span class="white">input</span>
+                  <span class="blue">)</span>
+                  <span class="white">;</span>
+                </div>
+                <div class="code-descriptions__third">
+                  <span class="purple">  }</span>
+                </div>
+                <div class="code-descriptions__explenation">
+                  <span class="small-text">//Тут можна замінити функцію 'declaration' на стрілкову функцію 'expression' щоб скоротити код. Приклад:</span>
+                </div>
+                <div class="code-descriptions__third">
+                  <span class="white">(</span>
+                  <span class="blue">const</span>
+                  <span class="green">parseNumber</span>
+                  <span class="coral">=</span>
+                  <span class="orange">input</span>
+                  <span class="blue">=></span>
+                  <span class="green">parseFloat</span>
+                  <span class="purple">(</span>
+                  <span class="green">String</span>
+                  <span class="blue">(</span>
+                  <span class="white">input</span>
+                  <span class="blue">)</span>
+                  <span class="white">.</span>
+                  <span class="green">replace</span>
+                  <span class="yellow">(/</span>
+                  <span class="blue">[</span>
+                  <span class="coral">^</span>
+                  <span class="blue">0-9.]</span>
+                  <span class="yellow">/</span>
+                  <span class="coral">g</span>
+                  <span class="white">,</span>
+                  <span class="yellow">'')</span>
+                  <span class="purple">)</span>
+                  <span class="white">;</span>
+                  <span class="white">)</span>
+                </div>
+                <br>
+                <div class="code-descriptions__explenation">
+                  <span class="small-text">// Перетворюємо введені значення на числа</span>
+                </div>
+                <div class="code-descriptions__third">
+                  <span class="white">a</span>
+                  <span class="coral">=</span>
+                  <span class="green">parseNumber</span>
+                  <span class="purple">(</span>
+                  <span class="white">a</span>
+                  <span class="purple">)</span>
+                  <span class="white">;</span>
+                </div>
+                <div class="code-descriptions__third">
+                  <span class="white">b</span>
+                  <span class="coral">=</span>
+                  <span class="green">parseNumber</span>
+                  <span class="purple">(</span>
+                  <span class="white">b</span>
+                  <span class="purple">)</span>
+                  <span class="white">;</span>
+                </div>
+                <div class="code-descriptions__explenation">
+                  <span class="small-text">// Робимо перевірку якщо одне з значень не число або b дорівнює нулю</span>
+                </div>
+                <div class="code-descriptions__third">
+                  <span class="coral">  if</span>
+                  <span class="purple">(</span>
+                  <span class="green">isNaN</span>
+                  <span class="blue">(</span>
+                  <span class="white">a</span>
+                  <span class="blue">)</span>
+                  <span class="coral">||</span>
+                  <span class="green">isNaN</span>
+                  <span class="blue">(</span>
+                  <span class="white">b</span>
+                  <span class="blue">)</span>
+                  <span class="coral">||</span>
+                  <span class="white">b</span>
+                  <span class="coral">===</span>
+                  <span class="purple">0</span>
+                  <span class="purple">)</span>
+                  <span class="purple">{</span>
+                </div>
+                <div class="code-descriptions__third">
+                  <span class="coral">    return</span>
+                  <span class="yellow small-text">"Результат ділення: недійсні значення"</span>
+                  <span class="white">;</span>
+                </div>
+                  <div class="code-descriptions__third">
+                    <span class="purple">  }</span>
+                </div>
+                <div class="code-descriptions__third">
+                  <span class="blue">  let</span>
+                  <span class="white">result</span>
+                  <span class="coral">=</span>
+                  <span class="white">a</span>
+                  <span class="coral">/</span>
+                  <span class="white">b</span>
+                  <span class="white">;</span>
+                </div>
+                <div class="code-descriptions__third">
+                  <span class="coral">return</span>
+                  <span class="yellow">"Результат ділення: "</span>
+                  <span class="coral">+</span>
+                  <span class="white">result;</span>
+                </div>
+                <div class="code-descriptions__third">
+                  <span class="yellow">}</span>
+                </div>
+                <div class="code-descriptions__explenation">
+                  <span class="small-text">// Приклади викликів функції з різними значеннями</span>
+                </div>
+                <div class="code-descriptions__call-function">
+                  <span class="blue">console.</span>
+                  <span class="green">log</span>
+                  <span class="yellow">(</span>
+                  <span class="green">divideWithMessage</span>
+                  <span class="purple">(10, 2)</span>
+                  <span class="yellow">)</span>
+                  <span class="white">;</span>
+                </div>
+                <div class="code-descriptions__explenation">
+                  <span class="small-text">// Результат ділення: 5</span>
+                </div>
+                <div class="code-descriptions__call-function">
+                  <span class="blue">console.</span>
+                  <span class="green">log</span>
+                  <span class="yellow">(</span>
+                  <span class="green">divideWithMessage</span>
+                  <span class="purple">('12.3ed', 4)</span>
+                  <span class="yellow">)</span>
+                  <span class="white">;</span>
+                </div>
+                <div class="code-descriptions__explenation">
+                  <span class="small-text">// Результат ділення: 3.075</span>
+                </div>
+                <div class="code-descriptions__call-function">
+                  <span class="blue">console.</span>
+                  <span class="green">log</span>
+                  <span class="yellow">(</span>
+                  <span class="green">divideWithMessage</span>
+                  <span class="purple">('abc', 4)</span>
+                  <span class="yellow">)</span>
+                  <span class="white">;</span>
+                </div>
+                <div class="code-descriptions__explenation">
+                  <span class="small-text">// Результат ділення: недійсні значення</span>
+                </div>
+                <div class="code-descriptions__call-function">
+                  <span class="blue">console.</span>
+                  <span class="green">log</span>
+                  <span class="yellow">(</span>
+                  <span class="green">divideWithMessage</span>
+                  <span class="purple">('10', 0)</span>
+                  <span class="yellow">)</span>
+                  <span class="white">;</span>
+                </div>
+                <div class="code-descriptions__explenation">
+                  <span class="small-text">// Результат ділення: недійсні значення</span>
+                </div>
+                <div class="code-descriptions__call-function">
+                  <span class="blue">console.</span>
+                  <span class="green">log</span>
+                  <span class="yellow">(</span>
+                  <span class="green">divideWithMessage</span>
+                  <span class="purple">()</span>
+                  <span class="yellow">)</span>
+                  <span class="white">;</span>
+                </div>
+                <div class="code-descriptions__explenation">
+                  <span class="small-text">// Результат ділення: недійсні значення</span>
+                </div>
+              </div>
+              <div class="output-container__main-headlines">Висовок: як бачимо, існують різні шляхи вирішення задачі. Також велику роль відіграє умова з конкретним переліком перевірок, які потрібно здійснити. Це полегшує розв'язання і робить підхід до задачі коректнішим, а код простішим. Адже не завжди потрібно використовувати всю JavaScript артилерію для вирішення іноді дрібних задач.</div>
+              </div>
+              <div class="output-container__task">Задача №5
+                <span>Створіть масив даних - 5 елементів, один з яких число 10. Обробіть масив за допомогою методу перебору. Перевіряйте елемент на відповідність числу 10, та у разі відповідності, виводьте в консоль</span>
+                <span class="whith-border">Для вирішення цієї задачі потрібно створивши масив з пʼяти елементів - перебрати їх за допомогою циклу 'for'. Наступний крок - перевірити чи він строго дорівнює числу '10', та вивести в консоль, знайдене. Ось як він виглядає:<br><br>const array = [3, 10, 'hello', 42, true];<br><br> for (let i = 0; i < array.length; i++) {<br>   if (array[i] === 10) {<br>      console.log('Знайдено число:', array[i]);<br>      }<br>  }<br><br>В консолі ми отримаємо повідомлення: 'Знайдене число: 10'</span>
+                <div class="output-container__main-headlines">Також можна вирішити це завдання такими методами масивів, як:</div>
+                <div class="output-container__main-headlines">1. find</div>
+                <span> Метод 'find' повертає перший елемент масиву, який задовольняє умову вказану в функції зворотного виклику. Проте, якщо б у нас було декілька цифр '10', то знайшовши першу 'десятку' (що еквівалентне до 'true') - пошук припиниться, якщо не знайде жодного поверне 'undefined'</span>
+                <div class="black-block-code code-descriptions">
+                  <div class="code-descriptions__fourth">
+                    <span class="blue">const</span>
+                    <span class="green">array1</span>
+                    <span class="coral">=</span>
+                    <span class="yellow">[</span>
+                    <span class="purple">3,</span>
+                    <span class="purple">10,</span>
+                    <span class="yellow">'hello js',</span>
+                    <span class="purple">42,</span>
+                    <span class="blue">true</span>
+                    <span class="yellow">]</span>
+                    <span class="white">;</span>
+                  </div>
+                  <div class="code-descriptions__fourth">
+                    <span class="blue">const</span>
+                    <span class="green">found</span>
+                    <span class="coral">=</span>
+                    <span class="blue">array1.</span>
+                    <span class="green">find</span>
+                    <span class="yellow">(</span>
+                    <span class="orange">element</span>
+                    <span class="blue">=></span>
+                    <span class="white">element</span>
+                    <span class="coral">===</span>
+                    <span class="purple">10</span>
+                    <span class="yellow">)</span>
+                    <span class="white">;</span>
+                  </div>
+                  <div class="code-descriptions__fourth">
+                    <span class="coral">  if</span>
+                    <span class="yellow">(</span>
+                    <span class="white">found</span>
+                    <span class="coral">!==</span>
+                    <span class="blue">undefined</span>
+                    <span class="yellow">)</span>
+                    <span class="yellow">{</span>
+                  </div>
+                  <div class="code-descriptions__fourth">
+                    <span class="blue">console.</span>
+                    <span class="green">log</span>
+                    <span class="purple">(</span>
+                    <span class="yellow">'Знайдено число 10:',</span>
+                    <span class="white">found</span>
+                    <span class="purple">)</span>
+                    <span class="white">;</span>
+                  </div>
+                  <div class="code-descriptions__fourth">
+                    <span class="yellow">}</span>
+                  </div>
+                </div>
+                <div class="output-container__main-headlines">2. some</div>
+                <span> Метод some схожий до попереднього, проте перевіряє, чи задовольняє хоча б один елемент масиву умову, вказану в функції зворотного виклику. Повертає булеве значення, тобто 'true'/'false'.</span>
+                <div class="black-block-code code-descriptions">
+                  <div class="code-descriptions__fifth">
+                    <span class="blue">const</span>
+                    <span class="green">array2</span>
+                    <span class="coral">=</span>
+                    <span class="yellow">[</span>
+                    <span class="purple">3, 10,</span>
+                    <span class="yellow">'hello',</span>
+                    <span class="purple">42,</span>
+                    <span class="blue">true</span>
+                    <span class="yellow">]</span>
+                    <span class="white">;</span>
+                  </div>
+                  <div class="code-descriptions__fifth">
+                    <span class="blue">const</span>
+                    <span class="green">hasTen</span>
+                    <span class="coral">=</span>
+                    <span class="blue">array2.</span>
+                    <span class="green">some</span>
+                    <span class="yellow">(</span>
+                    <span class="orange">element</span>
+                    <span class="blue">=></span>
+                    <span class="white">element</span>
+                    <span class="coral">===</span>
+                    <span class="purple">10</span>
+                    <span class="yellow">)</span>
+                    <span class="white">;</span>
+                  </div>
+                  <div class="code-descriptions__fifth">
+                    <span class="coral">  if</span>
+                    <span class="yellow">(</span>
+                    <span class="white">hasTen</span>
+                    <span class="yellow">)</span>
+                    <span class="yellow">{</span>
+                  </div>
+                  <div class="code-descriptions__fifth">
+                    <span class="blue">    console.</span>
+                    <span class="green">log</span>
+                    <span class="purple">(</span>
+                    <span class="orange">'Знайдено число 10',</span>
+                    <span class="white">hasTen</span>
+                    <span class="purple">)</span>
+                    <span class="white">;</span>
+                  </div>
+                  <div class="code-descriptions__fifth">
+                    <span class="yellow">}</span>
+                  </div>
+                </div>
+                <div class="output-container__main-headlines">3. filter</div>
+                <span> Метод filter створить новий масив з усіх елементів, які задовольняють умову, вказану в функції зворотного виклику.</span>
+                <div class="black-block-code code-descriptions">
+                  <div class="code-descriptions__sixth">
+                    <span class="blue">const</span>
+                    <span class="green">array3</span>
+                    <span class="coral">=</span>
+                    <span class="yellow">[</span>
+                    <span class="purple">3, 10, 10,</span>
+                    <span class="yellow">'привіт',</span>
+                    <span class="purple">10, 42,</span>
+                    <span class="blue">false</span>
+                    <span class="yellow">]</span>
+                    <span class="white">;</span>
+                  </div>
+                  <div class="code-descriptions__sixth">
+                    <span class="blue">const</span>
+                    <span class="green">filtered</span>
+                    <span class="coral">=</span>
+                    <span class="blue">array3.</span>
+                    <span class="green">filter</span>
+                    <span class="yellow">(</span>
+                    <span class="orange">element</span>
+                    <span class="blue">=></span>
+                    <span class="white">element</span>
+                    <span class="coral">===</span>
+                    <span class="purple">10</span>
+                    <span class="white">;</span>
+                    <span class="yellow">)</span>
+                  </div>
+                  <div class="code-descriptions__sixth">
+                    <span class="coral">  if</span>
+                    <span class="yellow">(</span>
+                    <span class="blue">filtered.</span>
+                    <span class="green">length</span>
+                    <span class="coral">></span>
+                    <span class="purple">0</span>
+                    <span class="yellow">)</span>
+                    <span class="yellow">{</span>
+                  </div>
+                  <div class="code-descriptions__sixth">
+                    <span class="blue">console.</span>
+                    <span class="green">log</span>
+                    <span class="purple">(</span>
+                    <span class="yellow small-text">'Створено новий масив чисел 10:',</span>
+                    <span class="white small-text">filtered</span>
+                    <span class="purple">)</span>
+                    <span class="white">;</span>
+                  </div>
+                  <div class="code-descriptions__sixth">}</div>
+                </div>
+                <div class="output-container__main-headlines">4. forEach</div>
+                <span> Метод 'forEach' дозволить запустити функцію для кожного елемента масиву один раз. Функція не буде виконана для віддалених чи пропущених елементів масиву, але буде викликана для елементів які існують в масиві чи мають значення 'undefined'. Також хочу підкреслити, що не існує методу перервати роботу 'forEach' - виконаються всі цикли перебору!</span>
+                  <span> Цей метод найдоречніший на мою думку для вирішення цієї задачі. Маючи декільки одинакових значень які шукаються, в консолі ми побачимо кружечок з лівої сторони з відобреженням кількості знайдених значень.</span>
+                </span>
+                <span> Метод масиву forEach - це те саме, що й цикл 'for', проте він зручніший тим, що коду набагато менше, а також він більш читабельний і зрозумілий. Використання 'forEach' допомагає уникнути помилок, пов'язаних з ініціалізацією ітератора, умовами завершення та кроками ітерації, що часто трапляються при написанні класичного циклу for.</span>
+                <span> Автоматичне керування індексами: forEach автоматично обробляє індекси, тому немає потреби турбуватися про їх ініціалізацію, інкрементування та перевірку умов.</span>
+                <span> Функціональний стиль: forEach сприяє використанню функціонального стилю програмування, де обробка кожного елемента масиву виконується за допомогою колбек-функції. Це робить код більш декларативним та виразним.</span>
+                <span> Менша ймовірність помилок: Використання 'forEach' зменшує ймовірність помилок, пов'язаних з неправильним управлінням індексами або умовами циклу.</span>
+                <div class="black-block-code code-descriptions">
+                  <div class="code-descriptions__seventh">
+                    <span class="blue">const</span>
+                    <span class="green">array4</span>
+                    <span class="coral">=</span>
+                    <span class="yellow">[</span>
+                    <span class="purple">3, 10, 10,</span>
+                    <span class="yellow">'hello',</span>
+                    <span class="purple">42, 10,</span>
+                    <span class="blue">true</span>
+                    <span class="yellow">]</span>
+                    <span class="white">;</span>
+                  </div>
+                  <div class="code-descriptions__seventh">
+                    <span class="blue">array.</span>
+                    <span class="green">forEach</span>
+                    <span class="yellow">(</span>
+                    <span class="orange">element</span>
+                    <span class="blue">=></span>
+                    <span class="purple">{</span>
+                  </div>
+                  <div class="code-descriptions__seventh">
+                    <span class="coral">  if</span>
+                    <span class="blue">(</span>
+                    <span class="white">element</span>
+                    <span class="coral">===</span>
+                    <span class="purple">10</span>
+                    <span class="blue">) {</span>
+                  </div>
+                  <div class="code-descriptions__seventh">
+                    <span class="blue">    console.</span>
+                    <span class="green">log</span>
+                    <span class="yellow">(</span>
+                    <span class="orange small-text">'Знайдено число 10:'</span>
+                    <span class="white small-text">, element</span>
+                    <span class="yellow">)</span>
+                    <span class="white">;</span>
+                  </div>
+                  <div class="code-descriptions__seventh">  }</div>
+                  <div class="code-descriptions__seventh">
+                    <span class="purple">}</span>
+                    <span class="yellow">)</span>
+                  </div>
+                </div>
+                <span>5. Існують і інші методи, які можуть допомогти у пошуку індекса, на яких розміщені значення, проте це вже інша історія.</span>
+              </div>
+              </div>
+            
+    </main>
+    <footer class="footer">Далі буде (далі буде важко:))! Бажаю всім успіхів у навчанні !</footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

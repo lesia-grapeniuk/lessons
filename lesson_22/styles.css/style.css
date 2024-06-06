@@ -1,0 +1,226 @@
+@import url(https://fonts.googleapis.com/css?family=Cactus+Classical+Serif:regular);
+
+@import url("reset.css");
+
+.wrapper {
+  overflow: clip;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper > main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  color: black;
+  background-color: #415ff7;
+  padding: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+.page {
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 30px;
+  flex-grow: 1;
+  flex-grow: 1;
+  color: black;
+  background-color: #e3ee67;
+  padding: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 38px;
+}
+
+.title {
+  text-transform: capitalize;
+}
+.output-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 19px;
+  line-height: 1.2;
+  margin: 0 auto;
+  border-radius: 20px;
+  width: 800px;
+  height: 650px;
+  border: 1px solid #000;
+  overflow: auto;
+  white-space: pre-wrap;
+  padding: 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #000;
+}
+.output-container__task {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 9px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+}
+.output-container__task span {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px solid #000;
+  text-align: left;
+  line-height: 1.3;
+}
+.output-container__answer {
+  margin-top: 20px;
+  border: 1px solid #415ff7;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.output-container__main-headlines {
+  margin: 0 auto;
+  width: 100%;
+  text-align: left;
+  padding: 20px 0 20px 25px;
+  background-color: #c8f3f3;
+  border-radius: 20px;
+  text-decoration: underline #7483cb;
+}
+.whith-border {
+  border: 1px solid #000;
+}
+.small-text {
+  text-align: left;
+  font-size: 12px;
+  vertical-align: middle;
+  padding-top: 6px;
+}
+.underline {
+  text-decoration: underline blue;
+}
+.output-container__black-block,
+.black-block-code {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+}
+.line__black,
+.code-descriptions__first,
+.code-descriptions__second,
+.code-descriptions__third,
+.code-descriptions__fourth,
+.code-descriptions__fifth,
+.code-descriptions__sixth,
+.code-descriptions__seventh,
+.code-descriptions__exemple,
+.code-descriptions__call-function,
+.code-descriptions__add-line,
+.code-descriptions__explenation {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 5px;
+}
+.blue {
+  color: #415ff7;
+  padding-right: 5px;
+}
+.blue--without-r-padding,
+.white--without-r-padding,
+.coral--without-r-padding {
+  padding-right: 0;
+}
+.green {
+  padding-right: 5px;
+  color: #18b720;
+}
+.orange {
+  padding-right: 5px;
+  color: orange;
+}
+.yellow{
+  padding-right: 5px;
+  color: #f3e63b;
+}
+.coral {
+  color: coral;
+  padding-right: 5px;
+}
+.purple {
+  color: rgb(215, 139, 215);
+  padding-right: 5px;
+  font-weight: 700;
+}
+.white {
+  color: #fff;
+  padding-right: 5px;
+}
+.footer {
+  width: 100%;
+  color: black;
+  background-color: #415ff7;
+  padding: 20px;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+@media (max-width: 850px) {
+  .output-container {
+    width: 100%;
+    font-size: 19px;
+  }
+}
+@media (max-width: 650px) {
+  .output-container {
+    width: 100%;
+    font-size: 19px;
+  }
+  .header,
+  .footer,
+  .output-container {
+    font-size: 19px;
+  }
+  .title {
+    font-size: 22px;
+  }
+}
+@media (max-width: 550px) {
+  .output-container {
+    width: 100%;
+    font-size: 19px;
+  }
+}
