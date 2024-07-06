@@ -2482,7 +2482,7 @@ textarea {
   }
 }
 
-.connetcion {
+.connection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2498,7 +2498,7 @@ textarea {
   letter-spacing: -0.02em;
 }
 @media (min-width: 84.375em) {
-  .connetcion {
+  .connection {
     -webkit-column-gap: 5rem;
        -moz-column-gap: 5rem;
             column-gap: 5rem;
@@ -2506,14 +2506,14 @@ textarea {
 }
 @media (min-width: 20em) and (max-width: 84.375em) {
   @supports ((-moz-column-gap: clamp( 1.25rem , 0.0849514563rem  +  5.8252427184vw , 5rem )) or (column-gap: clamp( 1.25rem , 0.0849514563rem  +  5.8252427184vw , 5rem ))) {
-    .connetcion {
+    .connection {
       -webkit-column-gap: clamp( 1.25rem , 0.0849514563rem  +  5.8252427184vw , 5rem );
          -moz-column-gap: clamp( 1.25rem , 0.0849514563rem  +  5.8252427184vw , 5rem );
               column-gap: clamp( 1.25rem , 0.0849514563rem  +  5.8252427184vw , 5rem );
     }
   }
   @supports not ((-moz-column-gap: clamp( 1.25rem , 0.0849514563rem  +  5.8252427184vw , 5rem )) or (column-gap: clamp( 1.25rem , 0.0849514563rem  +  5.8252427184vw , 5rem ))) {
-    .connetcion {
+    .connection {
       -webkit-column-gap: calc(1.25rem + 3.75 * (100vw - 20rem) / 64.375);
          -moz-column-gap: calc(1.25rem + 3.75 * (100vw - 20rem) / 64.375);
               column-gap: calc(1.25rem + 3.75 * (100vw - 20rem) / 64.375);
@@ -2521,68 +2521,68 @@ textarea {
   }
 }
 @media (max-width: 20em) {
-  .connetcion {
+  .connection {
     -webkit-column-gap: 1.25rem;
        -moz-column-gap: 1.25rem;
             column-gap: 1.25rem;
   }
 }
 @media (min-width: 84.375em) {
-  .connetcion {
+  .connection {
     font-size: 1.25rem;
   }
 }
 @media (min-width: 20em) and (max-width: 84.375em) {
   @supports (font-size: clamp( 0.875rem , 0.7584951456rem  +  0.5825242718vw , 1.25rem )) {
-    .connetcion {
+    .connection {
       font-size: clamp( 0.875rem , 0.7584951456rem  +  0.5825242718vw , 1.25rem );
     }
   }
   @supports not (font-size: clamp( 0.875rem , 0.7584951456rem  +  0.5825242718vw , 1.25rem )) {
-    .connetcion {
+    .connection {
       font-size: calc(0.875rem + 0.375 * (100vw - 20rem) / 64.375);
     }
   }
 }
 @media (max-width: 20em) {
-  .connetcion {
+  .connection {
     font-size: 0.875rem;
   }
 }
-.connetcion__item {
+.connection__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.connetcion__call {
+.connection__call {
   position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
 @media (min-width: 84.375em) {
-  .connetcion__call {
+  .connection__call {
     padding-left: 2.5rem;
   }
 }
 @media (min-width: 20em) and (max-width: 84.375em) {
   @supports (padding-left: clamp( 1.5625rem , 1.2712378641rem  +  1.4563106796vw , 2.5rem )) {
-    .connetcion__call {
+    .connection__call {
       padding-left: clamp( 1.5625rem , 1.2712378641rem  +  1.4563106796vw , 2.5rem );
     }
   }
   @supports not (padding-left: clamp( 1.5625rem , 1.2712378641rem  +  1.4563106796vw , 2.5rem )) {
-    .connetcion__call {
+    .connection__call {
       padding-left: calc(1.5625rem + 0.9375 * (100vw - 20rem) / 64.375);
     }
   }
 }
 @media (max-width: 20em) {
-  .connetcion__call {
+  .connection__call {
     padding-left: 1.5625rem;
   }
 }
-.connetcion__call::before {
+.connection__call::before {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -2593,35 +2593,35 @@ textarea {
   width: 20px;
   height: 20px;
 }
-.connetcion__location {
+.connection__location {
   position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
 @media (min-width: 84.375em) {
-  .connetcion__location {
+  .connection__location {
     padding-left: 2.5rem;
   }
 }
 @media (min-width: 20em) and (max-width: 84.375em) {
   @supports (padding-left: clamp( 1.5625rem , 1.2712378641rem  +  1.4563106796vw , 2.5rem )) {
-    .connetcion__location {
+    .connection__location {
       padding-left: clamp( 1.5625rem , 1.2712378641rem  +  1.4563106796vw , 2.5rem );
     }
   }
   @supports not (padding-left: clamp( 1.5625rem , 1.2712378641rem  +  1.4563106796vw , 2.5rem )) {
-    .connetcion__location {
+    .connection__location {
       padding-left: calc(1.5625rem + 0.9375 * (100vw - 20rem) / 64.375);
     }
   }
 }
 @media (max-width: 20em) {
-  .connetcion__location {
+  .connection__location {
     padding-left: 1.5625rem;
   }
 }
-.connetcion__location::before {
+.connection__location::before {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -2632,35 +2632,35 @@ textarea {
   width: 20px;
   height: 20px;
 }
-.connetcion__mail {
+.connection__mail {
   position: relative;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
 }
 @media (min-width: 84.375em) {
-  .connetcion__mail {
+  .connection__mail {
     padding-left: 2.5rem;
   }
 }
 @media (min-width: 20em) and (max-width: 84.375em) {
   @supports (padding-left: clamp( 1.5625rem , 1.2712378641rem  +  1.4563106796vw , 2.5rem )) {
-    .connetcion__mail {
+    .connection__mail {
       padding-left: clamp( 1.5625rem , 1.2712378641rem  +  1.4563106796vw , 2.5rem );
     }
   }
   @supports not (padding-left: clamp( 1.5625rem , 1.2712378641rem  +  1.4563106796vw , 2.5rem )) {
-    .connetcion__mail {
+    .connection__mail {
       padding-left: calc(1.5625rem + 0.9375 * (100vw - 20rem) / 64.375);
     }
   }
 }
 @media (max-width: 20em) {
-  .connetcion__mail {
+  .connection__mail {
     padding-left: 1.5625rem;
   }
 }
-.connetcion__mail::before {
+.connection__mail::before {
   position: absolute;
   left: 0;
   bottom: 0;

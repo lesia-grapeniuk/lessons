@@ -143,7 +143,7 @@
     flex-shrink: 0;
   }
 }
-.connetcion {
+.connection {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -155,13 +155,13 @@
   line-height: 1;
   letter-spacing: -0.02em;
 
-  // .connetcion__item
+  // .connection__item
 
   &__item {
     display: flex;
   }
 
-  // .connetcion__call
+  // .connection__call
 
   &__call {
     @include adaptiveValue("padding-left", 40, 25);
@@ -180,7 +180,7 @@
     }
   }
 
-  // .connetcion__location
+  // .connection__location
 
   &__location {
     @include adaptiveValue("padding-left", 40, 25);
