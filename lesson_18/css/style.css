@@ -830,8 +830,6 @@ textarea {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #6f00a9;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
   padding: 15px 60px;
   max-width: 170px;
 }
@@ -869,11 +867,6 @@ textarea {
 }
 @media (hover: hover) {
   .hero-introducing__link:hover {
-    -webkit-transform: scale(1.1);
-        -ms-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
     background: #0B0045;
   }
 }
